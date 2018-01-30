@@ -149,7 +149,8 @@ tag 分支
 查看
 git tag
 分支
-git branch  git branch tag_ma_6.9.0 v_6.9.0
+git branch &amp;lt;new_name&amp;gt; &amp;lt;old_name&amp;gt;
+git branch tag_ma_6.9.0 v_6.9.0
 
     &hellip;
       </p>
@@ -167,8 +168,15 @@ git branch  git branch tag_ma_6.9.0 v_6.9.0
       
 环境安装
 
-1. 更新aptapt update -yapt upgrade -yapt install lsof curl vim -y
-2. 安装nvmcurl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash//重启nvm ls-remotenvm install v6.1.4nod
+1. 更新apt
+apt update -y
+apt upgrade -y
+apt install lsof curl vim -y
+2. 安装nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+//重启
+nvm ls-remote
+nvm install v6
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2018-01-29T09:16:17.000Z" class="post-list__meta--date date">2018-01-29</time> &#8226; <span class="post-list__meta--tags tags">于 

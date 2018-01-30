@@ -153,19 +153,30 @@
     <blockquote>
 <p>环境安装</p>
 </blockquote>
-<p><strong>1. 更新apt</strong><br>apt update -y<br>apt upgrade -y<br>apt install lsof curl vim -y</p>
-<p><strong>2. 安装nvm</strong><br>curl -o- <a href="https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh</a> | bash<br>//重启<br>nvm ls-remote<br>nvm install v6.1.4<br>node -v</p>
-<p><strong>3. 项目安装</strong><br>直接放到你要的目录就行了<br>或者git clon</p>
-<p><strong>4. 安装pm2</strong><br>npm install -g pm2 –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a> –verbose</p>
-<p>npm install -g nodemon  –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a> –verbose</p>
-<p>cd /var/www/myapp/</p>
-<p>查看错误日志:vim /root/.pm2/logs/myapp-error-0.log</p>
+<p><strong>1. 更新apt</strong></p>
+<pre><code>apt update -y
+apt upgrade -y
+apt install lsof curl vim -y
+</code></pre><p><strong>2. 安装nvm</strong></p>
+<pre><code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+//重启
+nvm ls-remote
+nvm install v6.1.4
+node -v
+</code></pre><p><strong>3. 项目安装</strong><br>直接放到你要的目录就行了<br>或者git clon</p>
+<p><strong>4. 安装pm2</strong></p>
+<pre><code>npm install -g pm2 --registry=https://registry.npm.taobao.org --verbose
+
+npm install -g nodemon  --registry=https://registry.npm.taobao.org --verbose
+
+cd /var/www/myapp/
+</code></pre><p>查看错误日志:vim /root/.pm2/logs/myapp-error-0.log</p>
 <p>启动:<em>pm2 startOrReload pm2.json</em></p>
 <p>查看:pm2 show 0(myapp)</p>
 <p>查看log:pm2 log 0</p>
 <p>清除:pm2 flush</p>
 <p>pm2 restart all</p>
-<p><strong>5. 项目端口</strong><br>lsof -i :5050<br>kill -9 xxx</p>
+<p><strong>5. 项目端口</strong><br>    lsof -i :5050<br>    kill -9 xxx</p>
 <p><em>[小程序相关]参考:<a href="https://segmentfault.com/a/1190000010213828?from=singlemessage&amp;isappinstalled=0" target="_blank" rel="noopener">https://segmentfault.com/a/1190000010213828?from=singlemessage&amp;isappinstalled=0</a><br>[OpenShift]参考:<a href="https://github.com/openshift/nodejs-ex.git" target="_blank" rel="noopener">https://github.com/openshift/nodejs-ex.git</a></em></p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Ping</span><br><span class="line"></span><br><span class="line">apt-get install inetutils-ping</span><br><span class="line">ping:</span><br><span class="line">ping www.baidu.com</span><br><span class="line">ping www.google.com.hk</span><br></pre></td></tr></table></figure>
 <blockquote>
@@ -256,7 +267,8 @@ tag 分支
 查看
 git tag
 分支
-git branch  git branch tag_ma_6.9.0 v_6.9.0
+git branch &amp;lt;new_name&amp;gt; &amp;lt;old_name&amp;gt;
+git branch tag_ma_6.9.0 v_6.9.0
 
                 &hellip;
                 </p>
