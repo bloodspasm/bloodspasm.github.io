@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>此去经年 | 小布先生的Blog</title>
+    <title>openshift-cli | 此去经年</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -15,11 +15,11 @@
     <meta name="description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="此去经年 | 小布先生的Blog">
+    <meta name="twitter:title" content="openshift-cli | 此去经年">
     <meta name="twitter:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="此去经年 | 小布先生的Blog">
+    <meta property="og:title" content="openshift-cli | 此去经年">
     <meta property="og:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
 
     
@@ -35,7 +35,7 @@
     <meta name="generator" content="hexo"/>
     
 
-    <link rel="canonical" href="http://yoursite.com"/>
+    <link rel="canonical" href="http://yoursite.com/2018/01/30/2018-01-31_OpenShift/"/>
 
                  
 </head>
@@ -134,16 +134,57 @@
 
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
-            <div class="main-post-list">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2018-01-30T02:08:05.000Z" class="post-list__meta--date date">2018-01-30</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/openshift/">openshift</a>
+ </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">openshift-cli</h1>
+  </header>
+
+  <section class="post">
+    <p><strong>安装</strong></p>
+<pre><code>//安装 oc命令
+brew install openshift-cli
+
+//登入
+oc login https://console.starter-us-west-2.openshift.com
+
+//查看
+bloodspasmMac:~ bloodspasm$ oc get pods
+NAME                 READY     STATUS       RESTARTS   AGE
+nodejs-ex-10-build   0/1       Init:Error   0          21h
+nodejs-ex-11-build   0/1       Completed    0          20h
+nodejs-ex-8-build    0/1       Completed    0          21h
+nodejs-ex-9-cww9g    1/1       Running      6          20h
+
+//下载代码到本地
+bloodspasmMac:~ bloodspasm$ oc rsync nodejs-ex-9-cww9g: /Users/bloodspasm/Desktop/test
+
+//代码同步到云端
+oc rsync /Users/bloodspasm/Desktop/test/ nodejs-ex-9-cww9g:
+</code></pre>
+  </section>
+
+</article>
+
+<section class="read-more">
+           
     
-  <ol class="post-list">
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/01/30/2018-01-30_Git/" title="link to post.title">Git</a></h2>
-      <p class="excerpt">
-    
-      
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Newer Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/01/30/2018-01-30_Git/" title="Git">Git</a></h2>
+                <p class="excerpt">
+                
+                
 tag 分支
 
 查看
@@ -152,43 +193,22 @@ git tag
 git branch &amp;lt;new_name&amp;gt; &amp;lt;old_name&amp;gt;
 git branch tag_ma_6.9.0 v_6.9.0
 
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-01-30T02:08:05.000Z" class="post-list__meta--date date">2018-01-30</time> &#8226; <span class="post-list__meta--tags tags">于 
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-01-30T02:08:05.000Z" class="post-list__meta--date date">2018-01-30</time> &#8226; <span class="post-list__meta--tags tags">于 
   <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/git/">git</a>
 </span><a class="btn-border-small" href="/2018/01/30/2018-01-30_Git/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/01/30/2018-01-31_OpenShift/" title="link to post.title">openshift-cli</a></h2>
-      <p class="excerpt">
-    
-      安装
-//安装 oc命令
-brew install openshift-cli
-
-//登入
-oc login https://console.starter-us-west-2.openshift.com
-
-//查看
-bloodspasmMac:~ bloodspasm$ oc get pods
-NAME                 READY     STATUS       RESTART
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-01-30T02:08:05.000Z" class="post-list__meta--date date">2018-01-30</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/openshift/">openshift</a>
-</span><a class="btn-border-small" href="/2018/01/30/2018-01-31_OpenShift/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/01/29/新浪云-1-Nodejs/" title="link to post.title">新浪云 1 Nodejs</a></h2>
-      <p class="excerpt">
-    
-      
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/01/29/新浪云-1-Nodejs/" title="新浪云 1 Nodejs">新浪云 1 Nodejs</a></h2>
+                <p class="excerpt">
+                
+                
 环境安装
 
 1. 更新apt
@@ -196,77 +216,22 @@ apt update -y
 apt upgrade -y
 apt install lsof curl vim -y
 2. 安装nvm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
-//重启
-nvm ls-remote
-nvm install v6
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-01-29T09:16:17.000Z" class="post-list__meta--date date">2018-01-29</time> &#8226; <span class="post-list__meta--tags tags">于 
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/i
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-01-29T09:16:17.000Z" class="post-list__meta--date date">2018-01-29</time> &#8226; <span class="post-list__meta--tags tags">于 
   <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/新浪云/">新浪云</a>
 </span><a class="btn-border-small" href="/2018/01/29/新浪云-1-Nodejs/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
+                       
+            </div>
+        
+     
+   
+   
   
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/01/29/新浪云-0-初始化/" title="link to post.title">新浪云 0 初始化</a></h2>
-      <p class="excerpt">
-    
-      创建 选择容器开发环境 查看 
-12新浪云 1 Nodejshttps://sae.sina.com.cn/?m=replicasmng&amp;amp;app_id=bloodspasm&amp;amp;__r=FTgFF8
+</section>
 
-git配置
-
-
-
-fileZilla配置
-
-
-
-Sync同步配置(Syncovery for Mac)
-
-配置链接
-
-配置服务端
-
-配置key
-
-
-
-Sync同步配置(Transmit 
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-01-29T08:59:50.000Z" class="post-list__meta--date date">2018-01-29</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/新浪云/">新浪云</a>
-</span><a class="btn-border-small" href="/2018/01/29/新浪云-0-初始化/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
   
-    
-  </ol>
-
-
- <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
-        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
-        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
-        messageStyle: "none"
-    }); 
-    
-</script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-</div>
-
 
             <footer class="footer">
     <span class="footer__copyright">
