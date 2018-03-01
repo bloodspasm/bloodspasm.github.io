@@ -49,7 +49,7 @@
     </span>
 
     
-<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+<header class="panel-cover " style="background-image: url(/images/background-cover.jpg)">
   <div class="panel-main">
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
@@ -140,170 +140,6 @@
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/28/2018-02-28/" title="link to post.title">LuaView学习(三)</a></h2>
-      <p class="excerpt">
-    
-      
-Object-C调用Lua
-
-查看Demo发现在LuaViewCore有一段代码,是适用于Object-C调用Lua的方法的
-12//iOS端[self callLua:@&#34;debug_runing_execute&#34; args:@[cmd]];
-在Lua的使用是
-1234567891011121314151617181920function debug_runing_execute( cmd )
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-02-28T05:45:46.000Z" class="post-list__meta--date date">2018-02-28</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2018/02/28/2018-02-28/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/08/2018-02-08_LuaView(二)/" title="link to post.title">LuaView学习(二)</a></h2>
-      <p class="excerpt">
-    
-      因为LuaView没有直接提供的上下滚动Scrollviewhttps://github.com/alibaba/LuaViewSDK/issues/65所以我们自己打造一个全能的支持上下滚动View
-思路正如作者说用RefreshCollectionView来去实现
-12345678910111213141516171819202122232425262728293031323334353637
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-02-08T06:42:44.000Z" class="post-list__meta--date date">2018-02-08</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2018/02/08/2018-02-08_LuaView(二)/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/06/2018-02-06_LuaView(一)/" title="link to post.title">LuaView学习(一)</a></h2>
-      <p class="excerpt">
-    
-      
-安装
-
-
-Pods引入（推荐）
- 在目标工程Podfile中加入如下命令，可以自动将最新的LuaViewSDK和对应的Lua虚拟机代码同时引入：
-pod &amp;apos;LuaViewSDK&amp;apos;, :git =&amp;gt; &amp;apos;git@gitlab.alibaba-inc.com:luaview/LuaViewSDK.git&amp;apos;
-
-源码引入
- 在Github上clone或者下载最
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-02-06T07:08:53.000Z" class="post-list__meta--date date">2018-02-06</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2018/02/06/2018-02-06_LuaView(一)/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/01/31/2018-01-31_OpenShift/" title="link to post.title">openshift-cli</a></h2>
-      <p class="excerpt">
-    
-      安装
-//安装 oc命令
-brew install openshift-cli
-
-//登入
-oc login https://console.starter-us-west-2.openshift.com
-
-//查看
-bloodspasmMac:~ bloodspasm$ oc get pods
-NAME                 READY     STATUS       RESTART
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-01-31T06:50:56.000Z" class="post-list__meta--date date">2018-01-31</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/openshift/">openshift</a>
-</span><a class="btn-border-small" href="/2018/01/31/2018-01-31_OpenShift/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/01/30/2018-01-30_Git/" title="link to post.title">Git</a></h2>
-      <p class="excerpt">
-    
-      
-tag 分支
-
-查看
-git tag
-分支
-git branch &amp;lt;new_name&amp;gt; &amp;lt;old_name&amp;gt;
-git branch tag_ma_6.9.0 v_6.9.0
-
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-01-30T02:08:05.000Z" class="post-list__meta--date date">2018-01-30</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/git/">git</a>
-</span><a class="btn-border-small" href="/2018/01/30/2018-01-30_Git/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/01/29/新浪云-1-Nodejs/" title="link to post.title">新浪云 1 Nodejs</a></h2>
-      <p class="excerpt">
-    
-      
-环境安装
-
-1. 更新apt
-apt update -y
-apt upgrade -y
-apt install lsof curl vim -y
-2. 安装nvm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
-//重启
-nvm ls-remote
-nvm install v6
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-01-29T09:16:17.000Z" class="post-list__meta--date date">2018-01-29</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/新浪云/">新浪云</a>
-</span><a class="btn-border-small" href="/2018/01/29/新浪云-1-Nodejs/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/01/29/新浪云-0-初始化/" title="link to post.title">新浪云 0 初始化</a></h2>
-      <p class="excerpt">
-    
-      创建 选择容器开发环境 查看 
-12新浪云 1 Nodejshttps://sae.sina.com.cn/?m=replicasmng&amp;amp;app_id=bloodspasm&amp;amp;__r=FTgFF8
-
-git配置
-
-
-
-fileZilla配置
-
-
-
-Sync同步配置(Syncovery for Mac)
-
-配置链接
-
-配置服务端
-
-配置key
-
-
-
-Sync同步配置(Transmit 
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-01-29T08:59:50.000Z" class="post-list__meta--date date">2018-01-29</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/新浪云/">新浪云</a>
-</span><a class="btn-border-small" href="/2018/01/29/新浪云-0-初始化/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
       <h2 class="post-list__post-title post-title"><a href="/2015/10/20/Markdown 语法和 MWeb 写作使用说明/" title="link to post.title">Markdown 语法和 MWeb 写作使用说明</a></h2>
       <p class="excerpt">
     
@@ -319,26 +155,16 @@ Markdown 的目標是實現「易讀易寫」。不過最需要強調的便是�
     </li>
   
     
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2015/10/20/RAC-常用方法目录(收集)/" title="link to post.title">RAC</a></h2>
-      <p class="excerpt">
-    
-      - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-
-    /*******************************第一部分----简单使用***************************
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2015-10-19T22:49:50.000Z" class="post-list__meta--date date">2015-10-20</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/RAC/">RAC</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2015/10/20/RAC-常用方法目录(收集)/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
   </ol>
 
+
+  <nav class="pagination" role="navigation">
+    
+      <a class="older-posts pagination__newer btn btn-small btn-tertiary" href="/#blog">&larr; Prev</a>
+    
+    <span class="pagination__page-number" >  2 / 2 </span>
+    
+  </nav>
 
  <script type="text/x-mathjax-config">
     MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
