@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>ES6 Promise | 此去经年</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="ES6 Promise | 此去经年">
+    <meta name="twitter:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="ES6 Promise | 此去经年">
+    <meta property="og:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
+
+    
+    <meta name="author" content="bloodspasm">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/favicon.ico">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+
+    <link rel="canonical" href="http://yoursite.com/2018/03/09/2018-03-09-1/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 此去经年 的主页"><img src="/images/default_avatar.png" width="80" alt="此去经年 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for 此去经年">此去经年</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">小布先生的Blog</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Blogを読む" class="blog-button">Blog</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+  <li class="navigation__item">
+    <a href="https://weibo.com/p/1005051692500745" title="Weibo" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li> 
+
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/bloodspasm" title="GitHub" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  <li class="navigation__item">
+    <a href="https://twitter.com/bloodspasm" title="Twitter" target="_blank">
+      <i class='social fa fa-twitter'></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+
+  
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2018-03-09T05:56:05.000Z" class="post-list__meta--date date">2018-03-09</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/ES6/">ES6</a>, <a class="tag-link" href="/tags/Promise/">Promise</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/js/">js</a>
+ </span>
+      <span class="page-pv">
+       No. <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">ES6 Promise</h1>
+  </header>
+
+  <section class="post">
+    <h1 id="ES6-Promise-用法讲解"><a href="#ES6-Promise-用法讲解" class="headerlink" title="ES6 Promise 用法讲解"></a>ES6 Promise 用法讲解</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">runAsync</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> p = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>)</span>&#123;</span><br><span class="line">            <span class="comment">//做一些异步操作</span></span><br><span class="line">            setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">'执行完成runAsync'</span>);</span><br><span class="line">                resolve(<span class="number">100</span>);</span><br><span class="line">            &#125;, <span class="number">2000</span>);</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="keyword">return</span> p;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">runAsync2</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> p = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>)</span>&#123;</span><br><span class="line">            <span class="comment">//做一些异步操作</span></span><br><span class="line">            setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">'执行完成runAsync2'</span>);</span><br><span class="line">                resolve(data+<span class="number">200</span>);</span><br><span class="line">            &#125;, <span class="number">2000</span>);</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="keyword">return</span> p;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">runAsync3</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> p = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>)</span>&#123;</span><br><span class="line">            <span class="comment">//做一些异步操作</span></span><br><span class="line">            setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">'执行完成runAsync3'</span>);</span><br><span class="line">                resolve(data+<span class="number">300</span>);</span><br><span class="line">            &#125;, <span class="number">2000</span>);</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="keyword">return</span> p;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">runAsync4</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">var</span> p = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>)</span>&#123;</span><br><span class="line">            <span class="comment">//做一些异步操作</span></span><br><span class="line">            setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">'执行完成runAsync3'</span>);</span><br><span class="line">                reject(data+<span class="number">400</span>);</span><br><span class="line">            &#125;, <span class="number">2000</span>);</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="keyword">return</span> p;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">//catch的用法我们知道Promise对象除了then方法，还有一个catch方法，</span></span><br><span class="line">		<span class="comment">//它是做什么用的呢？其实它和then的第二个参数一样，用来指定reject的回调，用法是这样：</span></span><br><span class="line">    runAsync()</span><br><span class="line">        .then(<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(data);</span><br><span class="line">            <span class="keyword">return</span> runAsync2(data);</span><br><span class="line">        &#125;)</span><br><span class="line">        .then(<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(data);</span><br><span class="line">            <span class="keyword">return</span> runAsync3(data);</span><br><span class="line">        &#125;)</span><br><span class="line">        .then(<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(data);</span><br><span class="line">            <span class="keyword">return</span> <span class="number">50</span>;</span><br><span class="line">        &#125;)</span><br><span class="line">        .then(<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(data);</span><br><span class="line">            <span class="keyword">return</span> runAsync4(data);</span><br><span class="line">        &#125;)</span><br><span class="line">        .catch(<span class="function"><span class="keyword">function</span>(<span class="params">reason</span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">'失败'</span>);</span><br><span class="line">            <span class="built_in">console</span>.log(reason);</span><br><span class="line">        &#125;);</span><br></pre></td></tr></table></figure>
+<p>所以上面代码的输出结果就是：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">执行完成runAsync</span><br><span class="line"><span class="number">100</span></span><br><span class="line">执行完成runAsync2</span><br><span class="line"><span class="number">300</span></span><br><span class="line">执行完成runAsync3</span><br><span class="line"><span class="number">600</span></span><br><span class="line"><span class="number">50</span></span><br><span class="line">执行完成runAsync3</span><br><span class="line">失败</span><br><span class="line"><span class="number">450</span></span><br></pre></td></tr></table></figure>
+<h1 id="all的用法"><a href="#all的用法" class="headerlink" title="all的用法"></a>all的用法</h1><p>Promise的all方法提供了并行执行异步操作的能力，并且在所有异步操作执行完后才执行回调。我们仍旧使用上面定义好的runAsync1、runAsync2、runAsync3这三个函数，看下面的例子：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Promise</span></span><br><span class="line">.all([runAsync1(<span class="number">100</span>), runAsync2(<span class="number">100</span>), runAsync3(<span class="number">100</span>)])</span><br><span class="line">.then(<span class="function"><span class="keyword">function</span>(<span class="params">results</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(results);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>用Promise.all来执行，all接收一个数组参数，里面的值最终都算返回Promise对象。这样，三个异步操作的并行执行的，等到它们都执行完后才会进到then里面。那么，三个异步操作返回的数据哪里去了呢？都在then里面呢，all会把所有异步操作的结果放进一个数组中传给then，就是上面的results。所以上面代码的输出结果就是：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">执行完成runAsync2</span><br><span class="line">执行完成runAsync2</span><br><span class="line">执行完成runAsync3</span><br><span class="line">[ <span class="number">300</span>, <span class="number">300</span>, <span class="number">400</span> ]</span><br></pre></td></tr></table></figure>
+<h1 id="race的用法"><a href="#race的用法" class="headerlink" title="race的用法"></a>race的用法</h1><p>all方法的效果实际上是「谁跑的慢，以谁为准执行回调」，那么相对的就有另一个方法「谁跑的快，以谁为准执行回调」，这就是race方法，这个词本来就是赛跑的意思。race的用法与all一样，我们把上面runAsync1的延时改为1秒来看一下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Promise</span></span><br><span class="line">.race([runAsync1(<span class="number">100</span>), runAsync2(<span class="number">100</span>), runAsync3(<span class="number">100</span>)])</span><br><span class="line">.then(<span class="function"><span class="keyword">function</span>(<span class="params">results</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(results);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>这三个异步操作同样是并行执行的。结果你应该可以猜到，1秒后runAsync1已经执行完了，此时then里面的就执行了。结果是这样的：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">执行完成runAsync2</span><br><span class="line">执行完成runAsync2</span><br><span class="line">执行完成runAsync3</span><br><span class="line"><span class="number">300</span></span><br></pre></td></tr></table></figure>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">新しい記事</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/03/09/2018-03-09/" title="小饼干食物摄入">小饼干食物摄入</a></h2>
+                <p class="excerpt">
+                
+                
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-03-09T05:56:05.000Z" class="post-list__meta--date date">2018-03-09</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/cookie/">cookie</a>, <a class="tag-link" href="/tags/food/">food</a>, <a class="tag-link" href="/tags/lift/">lift</a>
+</span><a class="btn-border-small" href="/2018/03/09/2018-03-09/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">以前の記事</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/02/28/2018-02-11/" title="npm笔记">npm笔记</a></h2>
+                <p class="excerpt">
+                
+                升级 : npm install -g npm
+淘宝 : –registry=https://registry.npm.taobao.org
+node管理: 
+npm install -g n
+n lts
+
+警告
+
+1234567npm WARN弃用toiso-string@0.0.2：to-iso
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-02-28T05:45:46.000Z" class="post-list__meta--date date">2018-02-28</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/node/">node</a>, <a class="tag-link" href="/tags/npm/">npm</a>
+</span><a class="btn-border-small" href="/2018/02/28/2018-02-11/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2018 bloodspasm - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建，使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题，由<a href="https://monniya.com ">@Monniya</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?41918936ba907ae92396430db2ac1aa1";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
