@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>此去经年 | 小布先生的Blog</title>
+    <title>ES6 Promise | 此去经年</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -15,11 +15,11 @@
     <meta name="description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="此去经年 | 小布先生的Blog">
+    <meta name="twitter:title" content="ES6 Promise | 此去经年">
     <meta name="twitter:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="此去经年 | 小布先生的Blog">
+    <meta property="og:title" content="ES6 Promise | 此去经年">
     <meta property="og:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
 
     
@@ -35,7 +35,7 @@
     <meta name="generator" content="hexo"/>
     
 
-    <link rel="canonical" href="http://yoursite.com"/>
+    <link rel="canonical" href="http://yoursite.com/2018/03/09/2018-03-09-2/"/>
 
                  
 </head>
@@ -136,102 +136,58 @@
 
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
-            <div class="main-post-list">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2018-03-09T05:56:05.000Z" class="post-list__meta--date date">2018-03-09</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/ES6/">ES6</a>, <a class="tag-link" href="/tags/Promise/">Promise</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/js/">js</a>
+ </span>
+      <span class="page-pv">
+       No. <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">ES6 Promise</h1>
+  </header>
+
+  <section class="post">
+    <blockquote>
+<p>　文件</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 读取json</span></span><br><span class="line"><span class="comment">    * @returns &#123;Array&#125;</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   self.readjson = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">       <span class="keyword">var</span> data = fs.readFileSync(path.resolve(__dirname, <span class="string">'..'</span>)+<span class="string">"/public/wbPushRss.json"</span>, <span class="string">'utf8'</span>);</span><br><span class="line">       <span class="keyword">if</span>(data.length &gt; <span class="number">0</span> )&#123;</span><br><span class="line">           <span class="keyword">return</span> data.split(<span class="string">","</span>);</span><br><span class="line">       &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">           <span class="keyword">return</span> [];</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
     
-  <ol class="post-list">
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">以前の記事</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/03/09/2018-03-09-1/" title="ES6 Promise">ES6 Promise</a></h2>
+                <p class="excerpt">
+                
+                ES6 Promise 用法讲解123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869funct
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-03-09T05:56:05.000Z" class="post-list__meta--date date">2018-03-09</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/ES6/">ES6</a>, <a class="tag-link" href="/tags/Promise/">Promise</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/js/">js</a>
+</span><a class="btn-border-small" href="/2018/03/09/2018-03-09-1/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
   
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/01/29/新浪云-1-Nodejs/" title="link to post.title">新浪云 1 Nodejs</a></h2>
-      <p class="excerpt">
-    
-      
-环境安装
+</section>
 
-1. 更新apt
-apt update -y
-apt upgrade -y
-apt install lsof curl vim -y
-2. 安装nvm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
-//重启
-nvm ls-remote
-nvm install v6
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-01-29T09:16:17.000Z" class="post-list__meta--date date">2018-01-29</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/新浪云/">新浪云</a>
-</span><a class="btn-border-small" href="/2018/01/29/新浪云-1-Nodejs/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
   
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/01/29/新浪云-0-初始化/" title="link to post.title">新浪云 0 初始化</a></h2>
-      <p class="excerpt">
-    
-      创建 选择容器开发环境 查看 
-12新浪云 1 Nodejshttps://sae.sina.com.cn/?m=replicasmng&amp;amp;app_id=bloodspasm&amp;amp;__r=FTgFF8
-
-git配置
-
-
-
-fileZilla配置
-
-
-
-Sync同步配置(Syncovery for Mac)
-
-配置链接
-
-配置服务端
-
-配置key
-
-
-
-Sync同步配置(Transmit 
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-01-29T08:59:50.000Z" class="post-list__meta--date date">2018-01-29</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/新浪云/">新浪云</a>
-</span><a class="btn-border-small" href="/2018/01/29/新浪云-0-初始化/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-  </ol>
-
-
-  <nav class="pagination" role="navigation">
-    
-      <a class="older-posts pagination__newer btn btn-small btn-tertiary" href="/#blog">&larr; 前へ</a>
-    
-    <span class="pagination__page-number" >  2 / 2 </span>
-    
-  </nav>
-
- <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
-        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
-        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
-        messageStyle: "none"
-    }); 
-    
-</script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-</div>
-
 
             <footer class="footer">
     <span class="footer__copyright">
