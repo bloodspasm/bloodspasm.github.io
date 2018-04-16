@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>LuaView学习(一) | 此去经年</title>
+    <title>Pod组件化 | 此去经年</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -15,11 +15,11 @@
     <meta name="description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="LuaView学习(一) | 此去经年">
+    <meta name="twitter:title" content="Pod组件化 | 此去经年">
     <meta name="twitter:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="LuaView学习(一) | 此去经年">
+    <meta property="og:title" content="Pod组件化 | 此去经年">
     <meta property="og:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
 
     
@@ -35,7 +35,7 @@
     <meta name="generator" content="hexo"/>
     
 
-    <link rel="canonical" href="http://yoursite.com/2018/02/06/2018-02-06_LuaView(一)/"/>
+    <link rel="canonical" href="http://yoursite.com/2018/04/14/2018-04-14 Pod组件化/"/>
 
                  
 </head>
@@ -140,39 +140,63 @@
 
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2018-02-06T07:08:53.000Z" class="post-list__meta--date date">2018-02-06</time> &#8226; <span class="post-meta__tags tags">于 
-  <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
+      <time datetime="2018-04-14T02:40:55.000Z" class="post-list__meta--date date">2018-04-14</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>, <a class="tag-link" href="/tags/pod/">pod</a>
  </span>
       <span class="page-pv">
        Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
       </span> 
    
     </div>
-    <h1 class="post-title">LuaView学习(一)</h1>
+    <h1 class="post-title">Pod组件化</h1>
   </header>
 
   <section class="post">
-    <blockquote>
-<p>安装</p>
-</blockquote>
-<ol>
-<li><p>Pods引入（推荐）</p>
-<p> 在目标工程Podfile中加入如下命令，可以自动将最新的LuaViewSDK和对应的Lua虚拟机代码同时引入：</p>
-<pre><code>pod &apos;LuaViewSDK&apos;, :git =&gt; &apos;git@gitlab.alibaba-inc.com:luaview/LuaViewSDK.git&apos;
-</code></pre></li>
-<li><p>源码引入</p>
-<p> 在Github上clone或者下载最新版本源代码：<a href="https://github.com/alibaba/LuaViewSDK，" target="_blank" rel="noopener">https://github.com/alibaba/LuaViewSDK，</a><br>将LuaViewSDK和Lua虚拟机的源代码拷贝到目标工程中。如下图所示，红色表示的是LuaViewSDK源代码，绿色表示的是Lua虚拟机源代码</p>
-</li>
-</ol>
-<p><img src="http://p3azy2pd9.bkt.clouddn.com/2018-02-07-15179848701959.png" alt=""></p>
-<blockquote>
-<p>运行报错</p>
-</blockquote>
-<p><a href="https://github.com/alibaba/LuaViewSDK/issues/84" target="_blank" rel="noopener">‘system’ function is unavailable in iOS 11</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">static int os_execute (lua_State *L) &#123;</span><br><span class="line">//  lua_pushinteger(L, system(luaL_optstring(L, 1, NULL)));</span><br><span class="line">    lua_pushnil(L);</span><br><span class="line">  return 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p><a href="https://github.com/bloodspasm/LuaViewDemo-iOS" target="_blank" rel="noopener">Github-Demo</a></p>
-</blockquote>
+    <p>#1 安装Pod</p>
+<pre><code>1、升级Ruby环境
+
+sudo gem update --system
+
+2、更换Ruby镜像
+
+首先移除现有的Ruby镜像
+
+gem sources --remove https://rubygems.org/
+
+然后添加国内最新镜像源
+
+gem sources -a https://gems.ruby-china.org/
+
+执行完毕之后输入gem sources -l来查看当前镜像
+
+gem sources -l
+
+如果结果是
+
+*** CURRENT SOURCES ***
+
+https://gems.ruby-china.org/
+
+说明添加成功，否则继续执行$ gem source -a https://gems.ruby-china.org/来添加
+
+3、安装CocoaPods
+
+sudo gem install -n /usr/local/bin cocoapods
+
+pod setup
+
+当出现Setup completed的时候说明已经完成了。
+</code></pre><h1 id="2-注册Pod"><a href="#2-注册Pod" class="headerlink" title="2 注册Pod"></a>2 注册Pod</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//pod trunk register 邮箱 '昵称' --verbose</span></span><br><span class="line">pod trunk register <span class="number">164440931</span>@qq.com <span class="string">'bloodspasm'</span> --verbose</span><br></pre></td></tr></table></figure>
+<h1 id="3-创建podspec文件"><a href="#3-创建podspec文件" class="headerlink" title="3 创建podspec文件"></a>3 创建podspec文件</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">用pod的命令创建podspec文件</span><br><span class="line"></span><br><span class="line">pod spec create xxx</span><br><span class="line"></span><br><span class="line">会生成一个xxx.podspec文件我们只需要简单修改下相应的信息即可。</span><br></pre></td></tr></table></figure>
+<h1 id="4-发布"><a href="#4-发布" class="headerlink" title="4 发布"></a>4 发布</h1><p>pod lib lint –allow-warnings</p>
+<p>pod trunk push xxx.podspec </p>
+<h1 id="5-私有化"><a href="#5-私有化" class="headerlink" title="5 私有化"></a>5 私有化</h1><p>新建一个git地址做源<code>https://github.com/bloodspasm/Pods</code></p>
+<pre><code>pod repo add Pods https://github.com/bloodspasm/Pods.git
+</code></pre><p>成功后在<code>~/.cocoapods</code> 文件夹有新的文件夹Pods</p>
+<p>发布到自己的源</p>
+<pre><code>pod repo push Pods xxx.podspec
+</code></pre><p>发布成功后<br>我们来使用一下Podfile文件 如下</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Uncomment the next line to define a global platform for your project</span></span><br><span class="line"><span class="comment"># platform :ios, '9.0'</span></span><br><span class="line">source <span class="string">'https://github.com/CocoaPods/Specs.git'</span>     <span class="comment">#官方仓库地址</span></span><br><span class="line">source <span class="string">'https://github.com/bloodspasm/Pods.git'</span>     <span class="comment">#私有仓库地址</span></span><br><span class="line"></span><br><span class="line">target <span class="string">'CocoaFRPDemo'</span> <span class="keyword">do</span></span><br><span class="line">  <span class="comment"># Uncomment the next line if you're using Swift or would like to use dynamic frameworks</span></span><br><span class="line">  <span class="comment"># use_frameworks!</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Pods for CocoaFRPDemo</span></span><br><span class="line">  pod <span class="string">'CocoaFRP'</span></span><br><span class="line"></span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 
   </section>
 
@@ -181,37 +205,36 @@
 <section class="read-more">
            
     
-               
-            <div class="read-more-item">
-                <span class="read-more-item-dim">Newer Post</span>
-                <h2 class="post-list__post-title post-title"><a href="/2018/02/08/2018-02-08_LuaView(二)/" title="LuaView学习(二)">LuaView学习(二)</a></h2>
-                <p class="excerpt">
-                
-                因为LuaView没有直接提供的上下滚动Scrollviewhttps://github.com/alibaba/LuaViewSDK/issues/65所以我们自己打造一个全能的支持上下滚动View
-思路正如作者说用RefreshCollectionView来去实现
-123456789101112
-                &hellip;
-                </p>
-                <div class="post-list__meta"><time datetime="2018-02-08T06:42:44.000Z" class="post-list__meta--date date">2018-02-08</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2018/02/08/2018-02-08_LuaView(二)/">继续阅读</a></div>
-                           
-            </div>
         
         
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">Older Post</span>
-                <h2 class="post-list__post-title post-title"><a href="/2018/01/31/2018-02-01_想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗/" title="想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗？">想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗？</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/2018/03/14/面试笔记1/" title="iOS面试笔记 - 杂记">iOS面试笔记 - 杂记</a></h2>
                 <p class="excerpt">
                 
-                会的 不然我也不会游戏把性别改女.新赛季截图新赛季截图
-经常打农药水平还行,全能(中单&amp;gt;=辅助&amp;gt;射手&amp;gt;上单&amp;gt;打野),基本上每个赛季上单排王者20-30星.也发现一个问题越到后面的玩家其实越在意输赢.如果在低分段输了最多就在游戏里说说,后面都是加好友骂而且骂的很难听比如也导致我
+                
+AFN
+
+
+关于超时:
+请求超时
+获取超时
+发送超时
+
+设置代理:userseisson
+
+
+
+FMDB
+
+FMDatabaseQueue解决线程安全的操作方法：
+FMDatabaseQueue使用下面这个函数对数据库进行操作，通过描述可知，这样等于是把数据库的操作放到一个串行队列中，从而保证不会
                 &hellip;
                 </p>
-                <div class="post-list__meta"><time datetime="2018-01-31T06:50:56.000Z" class="post-list__meta--date date">2018-01-31</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/life/">life</a>, <a class="tag-link" href="/tags/游戏/">游戏</a>, <a class="tag-link" href="/tags/知乎/">知乎</a>
-</span><a class="btn-border-small" href="/2018/01/31/2018-02-01_想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗/">继续阅读</a></div>
+                <div class="post-list__meta"><time datetime="2018-03-14T09:13:21.000Z" class="post-list__meta--date date">2018-03-14</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>, <a class="tag-link" href="/tags/面试/">面试</a>
+</span><a class="btn-border-small" href="/2018/03/14/面试笔记1/">继续阅读</a></div>
                        
             </div>
         

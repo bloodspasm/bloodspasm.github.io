@@ -67,9 +67,9 @@
           <div>
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="/#blog" title="Blogを読む" class="blog-button">Blog</a></li>
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
             
-              <li class="navigation__item"><a href="/tags">读书笔记</a></li>
+              <li class="navigation__item"><a href="/tags/">读书笔记</a></li>
             
             </ul>
           </nav>
@@ -144,7 +144,7 @@
   <a class="tag-link" href="/tags/RAC/">RAC</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
  </span>
       <span class="page-pv">
-       No. <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
       </span> 
    
     </div>
@@ -152,7 +152,8 @@
   </header>
 
   <section class="post">
-    <pre><code>- (void)viewDidLoad {
+    <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#define weakify(...) \\</span></span><br><span class="line">autoreleasepool &#123;&#125; \\</span><br><span class="line">metamacro_foreach_cxt(rac_weakify_,, __<span class="keyword">weak</span>, __VA_ARGS__)</span><br><span class="line"></span><br><span class="line"><span class="meta">#define strongify(...) \\</span></span><br><span class="line">try &#123;&#125; <span class="keyword">@finally</span> &#123;&#125; \\</span><br><span class="line">_Pragma(<span class="string">"clang diagnostic push"</span>) \\</span><br><span class="line">_Pragma(<span class="string">"clang diagnostic ignored \\"</span>-Wshadow\\<span class="string">""</span>) \\</span><br><span class="line">metamacro_foreach(rac_strongify_,, __VA_ARGS__) \\</span><br><span class="line">_Pragma(<span class="string">"clang diagnostic pop"</span>)</span><br></pre></td></tr></table></figure>
+<pre><code>- (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
@@ -813,7 +814,7 @@
     
                
             <div class="read-more-item">
-                <span class="read-more-item-dim">新しい記事</span>
+                <span class="read-more-item-dim">Newer Post</span>
                 <h2 class="post-list__post-title post-title"><a href="/2018/01/29/新浪云-0-初始化/" title="新浪云 0 初始化">新浪云 0 初始化</a></h2>
                 <p class="excerpt">
                 
@@ -840,7 +841,7 @@ Sync同步配置(Syncovery
         
                
             <div class="read-more-item">
-                <span class="read-more-item-dim">以前の記事</span>
+                <span class="read-more-item-dim">Older Post</span>
                 <h2 class="post-list__post-title post-title"><a href="/2015/10/20/Markdown 语法和 MWeb 写作使用说明/" title="Markdown 语法和 MWeb 写作使用说明">Markdown 语法和 MWeb 写作使用说明</a></h2>
                 <p class="excerpt">
                 
