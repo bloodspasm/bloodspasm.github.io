@@ -67,7 +67,7 @@
           <div>
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">文字阁</a></li>
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
             
               <li class="navigation__item"><a href="/tags/">读书笔记</a></li>
             
@@ -81,7 +81,7 @@
   <!-- Weibo-->
   
   <li class="navigation__item">
-    <a href="https://weibo.com/p/1005051692500745" title="我的微博" target="_blank">
+    <a href="https://weibo.com/p/1005051692500745" title="Weibo" target="_blank">
       <i class='social fa fa-weibo'></i>
       <span class="label">Weibo</span>
     </a>
@@ -91,7 +91,7 @@
   <!-- Github -->
   
   <li class="navigation__item">
-    <a href="https://github.com/bloodspasm" title="查看我的GitHub主页" target="_blank">
+    <a href="https://github.com/bloodspasm" title="GitHub" target="_blank">
       <i class='social fa fa-github'></i>
       <span class="label">Github</span>
     </a>
@@ -110,7 +110,7 @@
 <!-- Twitter -->
 
   <li class="navigation__item">
-    <a href="https://twitter.com/bloodspasm" title="上Twitter找我" target="_blank">
+    <a href="https://twitter.com/bloodspasm" title="Twitter" target="_blank">
       <i class='social fa fa-twitter'></i>
       <span class="label">Twitter</span>
     </a>
@@ -144,7 +144,7 @@
   <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/算法/">算法</a>
  </span>
       <span class="page-pv">
-       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
       </span> 
    
     </div>
@@ -152,7 +152,7 @@
   </header>
 
   <section class="post">
-    <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">queen</span>(<span class="params">a,cur</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(cur==a.length)&#123;</span><br><span class="line">        <span class="comment">//是否算完8个位</span></span><br><span class="line">        <span class="built_in">console</span>.log(a);</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;a.length;i++)&#123;</span><br><span class="line">        a[cur]=i;<span class="comment">// 当前位置赋值</span></span><br><span class="line">        flag=<span class="literal">true</span>;<span class="comment">//假设合理</span></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        * i 位置是否合理</span></span><br><span class="line"><span class="comment">        * */</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> j=<span class="number">0</span>;j&lt;cur;j++)&#123;</span><br><span class="line">            <span class="comment">//前一个和现在的差</span></span><br><span class="line">            <span class="keyword">var</span> ab=i-a[j];</span><br><span class="line">            <span class="comment">//是否同行</span></span><br><span class="line">            <span class="comment">//是否斜行(列-行会相同)</span></span><br><span class="line">            <span class="keyword">if</span>(a[j]==i||(ab&gt;<span class="number">0</span>?ab:-ab)==cur-j)&#123;</span><br><span class="line">                flag=<span class="literal">false</span>;</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            &#125;;</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">         * i 位置合理</span></span><br><span class="line"><span class="comment">         * */</span></span><br><span class="line">        <span class="keyword">if</span>(flag)&#123;</span><br><span class="line">            <span class="comment">//算下1个位</span></span><br><span class="line">            queen(a,cur+<span class="number">1</span>)</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;;</span><br><span class="line">queen([<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>],<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+    <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">queen</span>(<span class="params">a,cur</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(cur==a.length)&#123;</span><br><span class="line">        <span class="comment">//是否算完8个列</span></span><br><span class="line">        <span class="built_in">console</span>.log(a);</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;a.length;i++)&#123;</span><br><span class="line">        a[cur]=i;<span class="comment">// 当前位置赋值</span></span><br><span class="line">        flag=<span class="literal">true</span>;<span class="comment">//假设合理</span></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        * i 位置是否合理</span></span><br><span class="line"><span class="comment">        * */</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> j=<span class="number">0</span>;j&lt;cur;j++)&#123;</span><br><span class="line">            <span class="comment">//前一个和现在的差</span></span><br><span class="line">            <span class="keyword">var</span> ab=i-a[j];</span><br><span class="line">            <span class="comment">//是否同行</span></span><br><span class="line">            <span class="comment">//是否斜行(列-行会相同)</span></span><br><span class="line">            <span class="keyword">if</span>(a[j]==i||(ab&gt;<span class="number">0</span>?ab:-ab)==cur-j)&#123;</span><br><span class="line">                flag=<span class="literal">false</span>;</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            &#125;;</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">         * i 位置合理</span></span><br><span class="line"><span class="comment">         * */</span></span><br><span class="line">        <span class="keyword">if</span>(flag)&#123;</span><br><span class="line">            <span class="comment">//算下1个位</span></span><br><span class="line">            queen(a,cur+<span class="number">1</span>)</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;;</span><br><span class="line">queen([<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>],<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
 
   </section>
 
@@ -165,7 +165,7 @@
         
                
             <div class="read-more-item">
-                <span class="read-more-item-dim">更早的文章</span>
+                <span class="read-more-item-dim">Older Post</span>
                 <h2 class="post-list__post-title post-title"><a href="/2018/04/18/2018-04-18 SDWebImage/" title="SDWebImage加载大图,多图,高清图导致奔溃问题">SDWebImage加载大图,多图,高清图导致奔溃问题</a></h2>
                 <p class="excerpt">
                 

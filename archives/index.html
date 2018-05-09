@@ -67,7 +67,7 @@
           <div>
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">文字阁</a></li>
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
             
               <li class="navigation__item"><a href="/tags/">读书笔记</a></li>
             
@@ -81,7 +81,7 @@
   <!-- Weibo-->
   
   <li class="navigation__item">
-    <a href="https://weibo.com/p/1005051692500745" title="我的微博" target="_blank">
+    <a href="https://weibo.com/p/1005051692500745" title="Weibo" target="_blank">
       <i class='social fa fa-weibo'></i>
       <span class="label">Weibo</span>
     </a>
@@ -91,7 +91,7 @@
   <!-- Github -->
   
   <li class="navigation__item">
-    <a href="https://github.com/bloodspasm" title="查看我的GitHub主页" target="_blank">
+    <a href="https://github.com/bloodspasm" title="GitHub" target="_blank">
       <i class='social fa fa-github'></i>
       <span class="label">Github</span>
     </a>
@@ -110,7 +110,7 @@
 <!-- Twitter -->
 
   <li class="navigation__item">
-    <a href="https://twitter.com/bloodspasm" title="上Twitter找我" target="_blank">
+    <a href="https://twitter.com/bloodspasm" title="Twitter" target="_blank">
       <i class='social fa fa-twitter'></i>
       <span class="label">Twitter</span>
     </a>
@@ -145,7 +145,7 @@
       <h2 class="post-list__post-title post-title"><a href="/2018/05/09/2018-05-09 八皇后/" title="link to post.title">八皇后问题</a></h2>
       <p class="excerpt">
     
-      1234567891011121314151617181920212223242526272829303132function queen(a,cur)&amp;#123;    if(cur==a.length)&amp;#123;        //是否算完8个位        console.log(a);        return    &amp;#125;;    for(var i=0;i&amp;lt;a.len
+      1234567891011121314151617181920212223242526272829303132function queen(a,cur)&amp;#123;    if(cur==a.length)&amp;#123;        //是否算完8个列        console.log(a);        return    &amp;#125;;    for(var i=0;i&amp;lt;a.len
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2018-05-09T00:56:56.000Z" class="post-list__meta--date date">2018-05-09</time> &#8226; <span class="post-list__meta--tags tags">于 
@@ -224,38 +224,6 @@ gem sources -a https://gems.ruby-china.org/
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/03/14/面试笔记2/" title="link to post.title">iOS面试笔记 - 内存管理</a></h2>
-      <p class="excerpt">
-    
-      
-1.什么是ARC？
-
-ARC是automatic reference counting自动引用计数，在程序编译时自动加入retain/release。在对象被创建时retain count+1，在对象被release时count-1，当count=0时，销毁对象。程序中加入autoreleasepool对象会由系统自动加上autorelease方法，如果该对象引用计数为0，则销毁。那么ARC是为
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-03-14T09:13:21.000Z" class="post-list__meta--date date">2018-03-14</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>, <a class="tag-link" href="/tags/面试/">面试</a>
-</span><a class="btn-border-small" href="/2018/03/14/面试笔记2/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/03/14/2018-03-14 webstorm快捷键/" title="link to post.title">webstorm快捷键</a></h2>
-      <p class="excerpt">
-    
-      花+Shif+/    多行注释花+/            注释花+Shif+上    上移动花+Opt+L        整理代码
-
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-03-14T09:13:21.000Z" class="post-list__meta--date date">2018-03-14</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/ide/">ide</a>, <a class="tag-link" href="/tags/js/">js</a>
-</span><a class="btn-border-small" href="/2018/03/14/2018-03-14 webstorm快捷键/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
       <h2 class="post-list__post-title post-title"><a href="/2018/03/14/面试笔记1/" title="link to post.title">iOS面试笔记 - 杂记</a></h2>
       <p class="excerpt">
     
@@ -291,6 +259,38 @@ FMDatabaseQueue使用下面这个函数对数据库进行操作，通过描述�
   
     
     <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/03/14/面试笔记2/" title="link to post.title">iOS面试笔记 - 内存管理</a></h2>
+      <p class="excerpt">
+    
+      
+1.什么是ARC？
+
+ARC是automatic reference counting自动引用计数，在程序编译时自动加入retain/release。在对象被创建时retain count+1，在对象被release时count-1，当count=0时，销毁对象。程序中加入autoreleasepool对象会由系统自动加上autorelease方法，如果该对象引用计数为0，则销毁。那么ARC是为
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-03-14T09:13:21.000Z" class="post-list__meta--date date">2018-03-14</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>, <a class="tag-link" href="/tags/面试/">面试</a>
+</span><a class="btn-border-small" href="/2018/03/14/面试笔记2/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/03/14/2018-03-14 webstorm快捷键/" title="link to post.title">webstorm快捷键</a></h2>
+      <p class="excerpt">
+    
+      花+Shif+/    多行注释花+/            注释花+Shif+上    上移动花+Opt+L        整理代码
+
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-03-14T09:13:21.000Z" class="post-list__meta--date date">2018-03-14</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/ide/">ide</a>, <a class="tag-link" href="/tags/js/">js</a>
+</span><a class="btn-border-small" href="/2018/03/14/2018-03-14 webstorm快捷键/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
       <h2 class="post-list__post-title post-title"><a href="/2018/03/09/2018-03-09/" title="link to post.title">小饼干食物摄入</a></h2>
       <p class="excerpt">
     
@@ -300,6 +300,20 @@ FMDatabaseQueue使用下面这个函数对数据库进行操作，通过描述�
       <div class="post-list__meta"><time datetime="2018-03-09T05:56:05.000Z" class="post-list__meta--date date">2018-03-09</time> &#8226; <span class="post-list__meta--tags tags">于 
   <a class="tag-link" href="/tags/cookie/">cookie</a>, <a class="tag-link" href="/tags/food/">food</a>, <a class="tag-link" href="/tags/lift/">lift</a>
 </span><a class="btn-border-small" href="/2018/03/09/2018-03-09/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/03/09/2018-03-09-1/" title="link to post.title">ES6 Promise</a></h2>
+      <p class="excerpt">
+    
+      ES6 Promise 用法讲解123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869function runAsync()&amp;#123;        var p = new Promise(fu
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-03-09T05:56:05.000Z" class="post-list__meta--date date">2018-03-09</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/ES6/">ES6</a>, <a class="tag-link" href="/tags/Promise/">Promise</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/js/">js</a>
+</span><a class="btn-border-small" href="/2018/03/09/2018-03-09-1/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
@@ -321,20 +335,6 @@ FMDatabaseQueue使用下面这个函数对数据库进行操作，通过描述�
     </li>
   
     
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/03/09/2018-03-09-1/" title="link to post.title">ES6 Promise</a></h2>
-      <p class="excerpt">
-    
-      ES6 Promise 用法讲解123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869function runAsync()&amp;#123;        var p = new Promise(fu
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-03-09T05:56:05.000Z" class="post-list__meta--date date">2018-03-09</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/ES6/">ES6</a>, <a class="tag-link" href="/tags/Promise/">Promise</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/js/">js</a>
-</span><a class="btn-border-small" href="/2018/03/09/2018-03-09-1/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
   </ol>
 
 
@@ -342,7 +342,7 @@ FMDatabaseQueue使用下面这个函数对数据库进行操作，通过描述�
     
     <span class="pagination__page-number" >  1 / 3 </span>
     
-      <a class="older-posts pagination__older btn btn-small btn-tertiary" href="/archives/page/2/">更早 &rarr;</a>
+      <a class="older-posts pagination__older btn btn-small btn-tertiary" href="/archives/page/2/">Next &rarr;</a>
     
   </nav>
 
