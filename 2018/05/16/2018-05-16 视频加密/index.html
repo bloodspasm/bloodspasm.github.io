@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>此去经年 | 小布先生的Blog</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="此去经年 | 小布先生的Blog">
+    <meta name="twitter:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="此去经年 | 小布先生的Blog">
+    <meta property="og:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
+
+    
+    <meta name="author" content="bloodspasm">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/favicon.ico">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+
+    <link rel="canonical" href="http://yoursite.com/2018/05/16/2018-05-16 视频加密/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 此去经年 的主页"><img src="/images/default_avatar.png" width="80" alt="此去经年 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for 此去经年">此去经年</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">小布先生的Blog</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="/tags/">读书笔记</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+  <li class="navigation__item">
+    <a href="https://weibo.com/p/1005051692500745" title="Weibo" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li> 
+
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/bloodspasm" title="GitHub" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  <li class="navigation__item">
+    <a href="https://twitter.com/bloodspasm" title="Twitter" target="_blank">
+      <i class='social fa fa-twitter'></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+
+  
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2018-05-16T01:11:00.733Z" class="post-list__meta--date date">2018-05-16</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title"></h1>
+  </header>
+
+  <section class="post">
+    <center><strong>文件加密/视频加密 作者:小布</strong></center>
+
+<hr>
+<blockquote>
+<p>思路</p>
+</blockquote>
+<p>我开始想的是不管是视频还是其他文件加密应该是对<code>数据流</code>的加密,我想到使用<code>NSStream</code>在实际的操作的时候发现效率太低了 一个 100MB+文件 解密加密耗时太久了,于是打算用C来操作</p>
+<center><img src="http://p3azy2pd9.bkt.clouddn.com/2018-05-17-B44FAED5B417EABD202E64F7CF681E6F.jpg" alt="B44FAED5B417EABD202E64F7CF681E6F"><br>大概思路让我想想<br></center>
+
+
+<p>加密-&gt;判断是否加密-&gt;文件头加密-&gt;内容加密<br>解密-&gt;判断文件头-&gt;对内容解密<br>    <em>代码:假定文件前9位做头加密</em></p>
+<center><img src="http://p3azy2pd9.bkt.clouddn.com/2018-05-17-BDE3F4F2C04B6DEDA335464997788E1F.gif" alt="BDE3F4F2C04B6DEDA335464997788E1F"><br>道理我都知道但是怎么写呢???<br></center>
+
+
+
+<blockquote>
+<p>第一步打开文件 fopen()</p>
+</blockquote>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">FILE *fin = fopen([fpold cStringUsingEncoding:<span class="built_in">NSUTF8StringEncoding</span>], <span class="string">"r"</span>);</span><br><span class="line">FILE *fout = fopen([fpnew cStringUsingEncoding:<span class="built_in">NSUTF8StringEncoding</span>], <span class="string">"wb+"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//保证文件有效</span></span><br><span class="line"><span class="keyword">if</span> (fin == <span class="literal">NULL</span> || fout == <span class="literal">NULL</span>) &#123;</span><br><span class="line">    printf(<span class="string">"fin == NULL || fout == NULL \n"</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">@""</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中文件使用方式是很讲究其中有几个特别要注意:</p>
+<ul>
+<li><p><strong>r 打开只读文件，该文件必须存在。</strong></p>
+</li>
+<li><p><strong>w 打开只写文件，若文件存在则文件长度清为0，即该文件内容会消失。若文件不存在则建立该文件。</strong></p>
+</li>
+<li><p><strong>b 读写打开一个二进制文件，允许读或在文件末追加数据。</strong></p>
+</li>
+</ul>
+<center><img src="http://p3azy2pd9.bkt.clouddn.com/2018-05-17-B44FAED5B417EABD202E64F7CF681E6F.jpg" alt="B44FAED5B417EABD202E64F7CF681E6F"><br>其他都是一些组合的操作了<br></center>
+
+
+
+
+<blockquote>
+<p>第二步读取文件-判断是否加密</p>
+</blockquote>
+<p>这是我开始写的</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">FILE *readFile;</span><br><span class="line">readFile = fopen([path cStringUsingEncoding:<span class="built_in">NSUTF8StringEncoding</span>], <span class="string">"rb+"</span>);</span><br><span class="line"><span class="keyword">if</span> (readFile != <span class="literal">NULL</span>) &#123;</span><br><span class="line">    fseek(readFile, <span class="number">0</span>, SEEK_SET);</span><br><span class="line">    <span class="keyword">char</span> list[<span class="number">9</span>] = &#123; <span class="number">0</span> &#125;;</span><br><span class="line">    fread(list, <span class="keyword">sizeof</span>(<span class="keyword">char</span>), <span class="number">9</span>, readFile);</span><br><span class="line">    fclose(readFile);</span><br><span class="line">    readFile = <span class="literal">NULL</span>;</span><br><span class="line">    <span class="keyword">char</span> wlist[<span class="number">9</span>] = HEAD_KEY;</span><br><span class="line">    <span class="keyword">return</span> strcmp(list, wlist);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    printf(<span class="string">"readFile == NULL\n"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>看上去好像没什么问题但是好像发现有问题就是 <code>strcmp</code> 这个方法具体导致他们不同的原因是 list 和 wlist 赋值导致的,可以发现一个问题就是 wlist 里char[]是和 list 里char[]一样的</p>
+<p><img src="http://p3azy2pd9.bkt.clouddn.com/2018-05-17-屏幕快照 2018-05-17 上午10.16.31.png" alt="屏幕快照 2018-05-17 上午10.16.31"></p>
+<p><img src="http://p3azy2pd9.bkt.clouddn.com/2018-05-17-屏幕快照 2018-05-17 上午10.17.09.png" alt="屏幕快照 2018-05-17 上午10.17.09"></p>
+<center><img src="http://p3azy2pd9.bkt.clouddn.com/2018-05-17-BDE3F4F2C04B6DEDA335464997788E1F.gif" alt="BDE3F4F2C04B6DEDA335464997788E1F"><br>咦 咦 咦 但是为什么没有什么软用呀! 让我瞅瞅<br></center>
+
+
+<p>不难发现mmp 你们char[]都一样但是他们的char不一样 好绝望呀,不要紧我们把char[]取出来再比对(具体原因还请大佬告知一下)</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">NSMutableString</span> *hexString = [<span class="built_in">NSMutableString</span> string];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="keyword">sizeof</span>(list); i++)&#123;</span><br><span class="line">	[hexString appendFormat:<span class="string">@"%02x "</span>, list[i]];</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">NSMutableString</span> *keyString = [<span class="built_in">NSMutableString</span> string];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="keyword">sizeof</span>(wlist); i++)&#123;</span><br><span class="line">	[keyString appendFormat:<span class="string">@"%02x "</span>, wlist[i]];</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> [keyString isEqualToString:hexString]?<span class="literal">NO</span>:<span class="literal">YES</span>;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>第三步文件头加密</p>
+</blockquote>
+<p>我干啥你只有两行代码你自己都不信</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> wlist[<span class="number">10</span>] = HEAD_KEY;</span><br><span class="line"><span class="built_in">fputs</span>(wlist,fout);</span><br></pre></td></tr></table></figure>
+<center><img src="http://p3azy2pd9.bkt.clouddn.com/2018-05-17-BDE3F4F2C04B6DEDA335464997788E1F.gif" alt="BDE3F4F2C04B6DEDA335464997788E1F"><br>咦 咦 咦 发生了什么???<br></center>
+
+<p>让我看看他们做什么了:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取到加密key</span></span><br><span class="line"><span class="keyword">char</span> wlist[<span class="number">10</span>] = HEAD_KEY;</span><br><span class="line"><span class="comment">//写入文件(原因:w 打开只写文件，若文件存在则文件长度清为0，即该文件内容会消失。若文件不存在则建立该文件)</span></span><br><span class="line"><span class="built_in">fputs</span>(wlist,fout);</span><br></pre></td></tr></table></figure>
+<p>我们还差两步就完成了是不是很简单呀</p>
+<blockquote>
+<p>第四步文件加密</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> buf[READ_BUFF];</span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">long</span> nread ;</span><br><span class="line"><span class="keyword">while</span>( (nread = fread(buf, <span class="keyword">sizeof</span>(<span class="keyword">char</span>), READ_BUFF, fin)) )&#123;</span><br><span class="line">	ccode(buf, nread);</span><br><span class="line">	fwrite(buf,<span class="keyword">sizeof</span>(<span class="keyword">char</span>),nread,fout);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<center><img src="http://p3azy2pd9.bkt.clouddn.com/2018-05-17-BDE3F4F2C04B6DEDA335464997788E1F.gif" alt="BDE3F4F2C04B6DEDA335464997788E1F"><br>咦 咦 咦 又发生了什么???没了???<br></center>
+
+<p>是的就没了我们瞅瞅发生了什么</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//每次读取流(buff)的大小</span></span><br><span class="line"><span class="keyword">char</span> buf[READ_BUFF];</span><br><span class="line"></span><br><span class="line"><span class="comment">//读取到的buff大小 作为循环开关</span></span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">long</span> nread ;</span><br><span class="line"></span><br><span class="line"><span class="comment">//循环去读取文件每次读取一个buff去处理</span></span><br><span class="line"><span class="keyword">while</span>( (nread = fread(buf, <span class="keyword">sizeof</span>(<span class="keyword">char</span>), READ_BUFF, fin)) )&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//对buff进行加密具体可以查看Demo</span></span><br><span class="line">	ccode(buf, nread);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//把加密后的buff写入文件</span></span><br><span class="line">	fwrite(buf,<span class="keyword">sizeof</span>(<span class="keyword">char</span>),nread,fout);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<center><img src="http://p3azy2pd9.bkt.clouddn.com/2018-05-17-B44FAED5B417EABD202E64F7CF681E6F.jpg" alt="B44FAED5B417EABD202E64F7CF681E6F"><br>可把我厉害了 吹个泡泡<br></center>
+
+<blockquote>
+<p>第五步文件解密</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">fseek(fin, <span class="number">9</span>, SEEK_SET);</span><br><span class="line"><span class="keyword">char</span> buf[READ_BUFF];</span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">long</span> nread ;</span><br><span class="line"><span class="keyword">while</span>( (nread = fread(buf, <span class="keyword">sizeof</span>(<span class="keyword">char</span>), READ_BUFF, fin)) )&#123;</span><br><span class="line">	cdecode(buf, nread);</span><br><span class="line">	fwrite(buf,<span class="keyword">sizeof</span>(<span class="keyword">char</span>),nread,fout);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<center><img src="http://p3azy2pd9.bkt.clouddn.com/2018-05-17-BDE3F4F2C04B6DEDA335464997788E1F.gif" alt="BDE3F4F2C04B6DEDA335464997788E1F"><br>咦 咦 咦 又没了???这么快写完了?<br></center>
+
+<p>是的核心的代码基本写完了其实加密和解密是一个思路只是要跳过文件加密头部分</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fseek(fin, <span class="number">9</span>, SEEK_SET);</span><br></pre></td></tr></table></figure>
+<p>接着对文件进行解密就行了.</p>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/05/09/2018-05-09 八皇后/" title="八皇后问题">八皇后问题</a></h2>
+                <p class="excerpt">
+                
+                1234567891011121314151617181920212223242526272829303132function queen(a,cur)&amp;#123;    if(cur==a.length)&amp;#123;        //是否算完8个列        console.log(a); 
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-05-09T00:56:56.000Z" class="post-list__meta--date date">2018-05-09</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/算法/">算法</a>
+</span><a class="btn-border-small" href="/2018/05/09/2018-05-09 八皇后/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2018 bloodspasm - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建，使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题，由<a href="https://monniya.com ">@Monniya</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?41918936ba907ae92396430db2ac1aa1";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
