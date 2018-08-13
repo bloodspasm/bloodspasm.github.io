@@ -142,88 +142,45 @@
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/28/2018-02-28/" title="link to post.title">LuaView学习(三)</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2015/10/20/RAC-常用方法目录(收集)/" title="link to post.title">RAC</a></h2>
       <p class="excerpt">
     
-      
-Object-C调用Lua
-
-查看Demo发现在LuaViewCore有一段代码,是适用于Object-C调用Lua的方法的
-12//iOS端[self callLua:@&#34;debug_runing_execute&#34; args:@[cmd]];
-在Lua的使用是
-1234567891011121314151617181920function debug_runing_execute( cmd )
+      12345678910#define weakify(...) \\autoreleasepool &amp;#123;&amp;#125; \\metamacro_foreach_cxt(rac_weakify_,, __weak, __VA_ARGS__)#define strongify(...) \\try &amp;#123;&amp;#125; @finally &amp;#123;&amp;#125; \\_Pragma(&#34;cla
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2018-02-28T05:45:46.000Z" class="post-list__meta--date date">2018-02-28</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2018/02/28/2018-02-28/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2015-10-19T22:49:50.000Z" class="post-list__meta--date date">2015-10-20</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/RAC/">RAC</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
+</span><a class="btn-border-small" href="/2015/10/20/RAC-常用方法目录(收集)/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/28/npm笔记/" title="link to post.title">npm笔记</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2015/10/20/Markdown 语法和 MWeb 写作使用说明/" title="link to post.title">Markdown 语法和 MWeb 写作使用说明</a></h2>
       <p class="excerpt">
     
-      升级 : npm install -g npm
-淘宝 : –registry=https://registry.npm.taobao.org
-node管理: 
-npm install -g n
-n lts
+      Markdown 的设计哲学
+Markdown 的目標是實現「易讀易寫」。不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。Markdown 的語法有個主要的目的：用來作為一種網路內容的寫作用語言。
 
-警告
-
-1234567npm WARN弃用toiso-string@0.0.2：to-iso-string已被弃用，请改用@ segment / to-iso-string。npm WARN弃
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2018-02-28T05:45:46.000Z" class="post-list__meta--date date">2018-02-28</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/node/">node</a>, <a class="tag-link" href="/tags/npm/">npm</a>
-</span><a class="btn-border-small" href="/2018/02/28/npm笔记/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/08/2018-02-08_LuaView(二)/" title="link to post.title">LuaView学习(二)</a></h2>
-      <p class="excerpt">
-    
-      因为LuaView没有直接提供的上下滚动Scrollviewhttps://github.com/alibaba/LuaViewSDK/issues/65所以我们自己打造一个全能的支持上下滚动View
-思路正如作者说用RefreshCollectionView来去实现
-12345678910111213141516171819202122232425262728293031323334353637
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-02-08T06:42:44.000Z" class="post-list__meta--date date">2018-02-08</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2018/02/08/2018-02-08_LuaView(二)/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/06/2018-02-06_LuaView(一)/" title="link to post.title">LuaView学习(一)</a></h2>
-      <p class="excerpt">
-    
-      
-安装
-
-
-Pods引入（推荐）
- 在目标工程Podfile中加入如下命令，可以自动将最新的LuaViewSDK和对应的Lua虚拟机代码同时引入：
-pod &amp;apos;LuaViewSDK&amp;apos;, :git =&amp;gt; &amp;apos;git@gitlab.alibaba-inc.com:luaview/LuaViewSDK.git&amp;apos;
-
-源码引入
- 在Github上clone或者下载最
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-02-06T07:08:53.000Z" class="post-list__meta--date date">2018-02-06</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2018/02/06/2018-02-06_LuaView(一)/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2015-10-19T22:49:50.000Z" class="post-list__meta--date date">2015-10-20</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Markdown/">Markdown</a>, <a class="tag-link" href="/tags/code/">code</a>
+</span><a class="btn-border-small" href="/2015/10/20/Markdown 语法和 MWeb 写作使用说明/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
   </ol>
 
+
+  <nav class="pagination" role="navigation">
+    
+      <a class="older-posts pagination__newer btn btn-small btn-tertiary" href="/tags/code/page/2/">&larr; Prev</a>
+    
+    <span class="pagination__page-number" >  3 / 3 </span>
+    
+  </nav>
 
  <script type="text/x-mathjax-config">
     MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },

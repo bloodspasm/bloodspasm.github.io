@@ -35,7 +35,7 @@
     <meta name="generator" content="hexo"/>
     
 
-    <link rel="canonical" href="http://yoursite.com"/>
+    <link rel="canonical" href="http://yoursite.com/Weex.html"/>
 
                  
 </head>
@@ -136,114 +136,20 @@
 
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
-            <div class="main-post-list">
-    
-  <ol class="post-list">
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/28/2018-02-28/" title="link to post.title">LuaView学习(三)</a></h2>
-      <p class="excerpt">
-    
-      
-Object-C调用Lua
+            <article class="post-container post-container--single">
 
-查看Demo发现在LuaViewCore有一段代码,是适用于Object-C调用Lua的方法的
-12//iOS端[self callLua:@&#34;debug_runing_execute&#34; args:@[cmd]];
-在Lua的使用是
-1234567891011121314151617181920function debug_runing_execute( cmd )
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-02-28T05:45:46.000Z" class="post-list__meta--date date">2018-02-28</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2018/02/28/2018-02-28/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/28/npm笔记/" title="link to post.title">npm笔记</a></h2>
-      <p class="excerpt">
-    
-      升级 : npm install -g npm
-淘宝 : –registry=https://registry.npm.taobao.org
-node管理: 
-npm install -g n
-n lts
+  <header class="post-header">
+    <h1 class="post-title"></h1>
+  </header>
 
-警告
+  <section class="post">
+    <p># </p>
+<p>开启服务:        npm run start<br>生成js文件:    npm run build</p>
+<p>接口工具 : ngrok(内网映射)</p>
 
-1234567npm WARN弃用toiso-string@0.0.2：to-iso-string已被弃用，请改用@ segment / to-iso-string。npm WARN弃
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-02-28T05:45:46.000Z" class="post-list__meta--date date">2018-02-28</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/node/">node</a>, <a class="tag-link" href="/tags/npm/">npm</a>
-</span><a class="btn-border-small" href="/2018/02/28/npm笔记/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/08/2018-02-08_LuaView(二)/" title="link to post.title">LuaView学习(二)</a></h2>
-      <p class="excerpt">
-    
-      因为LuaView没有直接提供的上下滚动Scrollviewhttps://github.com/alibaba/LuaViewSDK/issues/65所以我们自己打造一个全能的支持上下滚动View
-思路正如作者说用RefreshCollectionView来去实现
-12345678910111213141516171819202122232425262728293031323334353637
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-02-08T06:42:44.000Z" class="post-list__meta--date date">2018-02-08</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2018/02/08/2018-02-08_LuaView(二)/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/06/2018-02-06_LuaView(一)/" title="link to post.title">LuaView学习(一)</a></h2>
-      <p class="excerpt">
-    
-      
-安装
+  </section>
+</article>
 
-
-Pods引入（推荐）
- 在目标工程Podfile中加入如下命令，可以自动将最新的LuaViewSDK和对应的Lua虚拟机代码同时引入：
-pod &amp;apos;LuaViewSDK&amp;apos;, :git =&amp;gt; &amp;apos;git@gitlab.alibaba-inc.com:luaview/LuaViewSDK.git&amp;apos;
-
-源码引入
- 在Github上clone或者下载最
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-02-06T07:08:53.000Z" class="post-list__meta--date date">2018-02-06</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2018/02/06/2018-02-06_LuaView(一)/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-  </ol>
-
-
- <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
-        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
-        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
-        messageStyle: "none"
-    }); 
-    
-</script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-</div>
 
 
             <footer class="footer">

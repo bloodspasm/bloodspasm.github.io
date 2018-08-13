@@ -142,88 +142,75 @@
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/28/2018-02-28/" title="link to post.title">LuaView学习(三)</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2018/01/29/新浪云-1-Nodejs/" title="link to post.title">新浪云 1 Nodejs</a></h2>
       <p class="excerpt">
     
       
-Object-C调用Lua
+环境安装
 
-查看Demo发现在LuaViewCore有一段代码,是适用于Object-C调用Lua的方法的
-12//iOS端[self callLua:@&#34;debug_runing_execute&#34; args:@[cmd]];
-在Lua的使用是
-1234567891011121314151617181920function debug_runing_execute( cmd )
+1. 更新apt
+apt update -y
+apt upgrade -y
+apt install lsof curl vim -y
+2. 安装nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+//重启
+nvm ls-remote
+nvm install v6
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2018-02-28T05:45:46.000Z" class="post-list__meta--date date">2018-02-28</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2018/02/28/2018-02-28/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2018-01-29T09:16:17.000Z" class="post-list__meta--date date">2018-01-29</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/新浪云/">新浪云</a>
+</span><a class="btn-border-small" href="/2018/01/29/新浪云-1-Nodejs/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/28/npm笔记/" title="link to post.title">npm笔记</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2018/01/29/新浪云-0-初始化/" title="link to post.title">新浪云 0 初始化</a></h2>
       <p class="excerpt">
     
-      升级 : npm install -g npm
-淘宝 : –registry=https://registry.npm.taobao.org
-node管理: 
-npm install -g n
-n lts
+      创建 选择容器开发环境 查看 
+12新浪云 1 Nodejshttps://sae.sina.com.cn/?m=replicasmng&amp;amp;app_id=bloodspasm&amp;amp;__r=FTgFF8
 
-警告
+git配置
 
-1234567npm WARN弃用toiso-string@0.0.2：to-iso-string已被弃用，请改用@ segment / to-iso-string。npm WARN弃
+
+
+fileZilla配置
+
+
+
+Sync同步配置(Syncovery for Mac)
+
+配置链接
+
+配置服务端
+
+配置key
+
+
+
+Sync同步配置(Transmit 
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2018-02-28T05:45:46.000Z" class="post-list__meta--date date">2018-02-28</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/node/">node</a>, <a class="tag-link" href="/tags/npm/">npm</a>
-</span><a class="btn-border-small" href="/2018/02/28/npm笔记/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/08/2018-02-08_LuaView(二)/" title="link to post.title">LuaView学习(二)</a></h2>
-      <p class="excerpt">
-    
-      因为LuaView没有直接提供的上下滚动Scrollviewhttps://github.com/alibaba/LuaViewSDK/issues/65所以我们自己打造一个全能的支持上下滚动View
-思路正如作者说用RefreshCollectionView来去实现
-12345678910111213141516171819202122232425262728293031323334353637
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-02-08T06:42:44.000Z" class="post-list__meta--date date">2018-02-08</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2018/02/08/2018-02-08_LuaView(二)/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/06/2018-02-06_LuaView(一)/" title="link to post.title">LuaView学习(一)</a></h2>
-      <p class="excerpt">
-    
-      
-安装
-
-
-Pods引入（推荐）
- 在目标工程Podfile中加入如下命令，可以自动将最新的LuaViewSDK和对应的Lua虚拟机代码同时引入：
-pod &amp;apos;LuaViewSDK&amp;apos;, :git =&amp;gt; &amp;apos;git@gitlab.alibaba-inc.com:luaview/LuaViewSDK.git&amp;apos;
-
-源码引入
- 在Github上clone或者下载最
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-02-06T07:08:53.000Z" class="post-list__meta--date date">2018-02-06</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2018/02/06/2018-02-06_LuaView(一)/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2018-01-29T08:59:50.000Z" class="post-list__meta--date date">2018-01-29</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/新浪云/">新浪云</a>
+</span><a class="btn-border-small" href="/2018/01/29/新浪云-0-初始化/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
   </ol>
 
+
+  <nav class="pagination" role="navigation">
+    
+      <a class="older-posts pagination__newer btn btn-small btn-tertiary" href="/archives/2018/page/2/">&larr; Prev</a>
+    
+    <span class="pagination__page-number" >  3 / 3 </span>
+    
+  </nav>
 
  <script type="text/x-mathjax-config">
     MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
