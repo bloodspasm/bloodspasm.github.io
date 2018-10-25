@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>此去经年 | 小布先生的Blog</title>
+    <title>飞冰ICE 笔记 | 此去经年</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -15,11 +15,11 @@
     <meta name="description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="此去经年 | 小布先生的Blog">
+    <meta name="twitter:title" content="飞冰ICE 笔记 | 此去经年">
     <meta name="twitter:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="此去经年 | 小布先生的Blog">
+    <meta property="og:title" content="飞冰ICE 笔记 | 此去经年">
     <meta property="og:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
 
     
@@ -35,7 +35,7 @@
     <meta name="generator" content="hexo"/>
     
 
-    <link rel="canonical" href="http://yoursite.com"/>
+    <link rel="canonical" href="http://yoursite.com/2018/10/25/2018-10-25 飞冰Ice/"/>
 
                  
 </head>
@@ -136,74 +136,68 @@
 
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
-            <div class="main-post-list">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2018-10-25T02:32:04.000Z" class="post-list__meta--date date">2018-10-25</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/RN/">RN</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/node/">node</a>
+ </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">飞冰ICE 笔记</h1>
+  </header>
+
+  <section class="post">
+    <center><strong>飞冰ICE 笔记 作者:bloodspasm</strong></center>
+
+<blockquote>
+<p>安装失败</p>
+</blockquote>
+<p>在<code>运行日志</code>中使用<code>sudo</code>运行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cnpm i</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>bulid 失败</p>
+</blockquote>
+<p>在package.json中修改build的路径</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//修改前</span><br><span class="line">  "scripts": &#123;</span><br><span class="line">    "start": "rax-scripts start --port 6002 --type=miniapp",</span><br><span class="line">    "build": "rax-scripts build --type=miniapp --public-path=./"</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
     
-  <ol class="post-list">
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/10/12/2018-10-12 ARC/" title="ARC 笔记">ARC 笔记</a></h2>
+                <p class="excerpt">
+                
+                ARC 手动 作者:bloodspasm
+
+123#if !__has_feature(objc_arc)    [za release];#endif
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-10-12T01:01:29.000Z" class="post-list__meta--date date">2018-10-12</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/ARC/">ARC</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
+</span><a class="btn-border-small" href="/2018/10/12/2018-10-12 ARC/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
   
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/05/16/2018-05-16 视频加密/" title="link to post.title">文件加密/视频加密</a></h2>
-      <p class="excerpt">
-    
-      文件加密/视频加密 作者:bloodspasm
+</section>
 
-
-
-思路
-
-我开始想的是不管是视频还是其他文件加密应该是对数据流的加密,我想到使用NSStream在实际的操作的时候发现效率太低了 一个 100MB+文件 解密加密耗时太久了,于是打算用C来操作
-大概思路让我想想
-
-
-加密-&amp;gt;判断是否加密-&amp;gt;文件头加密-&amp;gt;内容加密解密-&amp;gt;判断文件头-&amp;gt;对内容解密    代码:假定文件前
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-05-16T00:56:56.000Z" class="post-list__meta--date date">2018-05-16</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/算法/">算法</a>
-</span><a class="btn-border-small" href="/2018/05/16/2018-05-16 视频加密/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
   
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/05/09/2018-05-09 八皇后/" title="link to post.title">八皇后问题</a></h2>
-      <p class="excerpt">
-    
-      八皇后问题 作者:bloodspasm
-
-1234567891011121314151617181920212223242526272829303132function queen(a,cur)&amp;#123;    if(cur==a.length)&amp;#123;        //是否算完8个列        console.log(a);        return    &amp;#125;;    f
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-05-09T00:56:56.000Z" class="post-list__meta--date date">2018-05-09</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/算法/">算法</a>
-</span><a class="btn-border-small" href="/2018/05/09/2018-05-09 八皇后/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-  </ol>
-
-
- <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
-        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
-        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
-        messageStyle: "none"
-    }); 
-    
-</script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-</div>
-
 
             <footer class="footer">
     <span class="footer__copyright">
