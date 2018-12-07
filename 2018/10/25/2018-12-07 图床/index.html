@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>关于微博图床 | 此去经年</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="关于微博图床 | 此去经年">
+    <meta name="twitter:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="关于微博图床 | 此去经年">
+    <meta property="og:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
+
+    
+    <meta name="author" content="bloodspasm">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/favicon.ico">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+
+    <link rel="canonical" href="http://yoursite.com/2018/10/25/2018-12-07 图床/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 此去经年 的主页"><img src="/images/default_avatar.png" width="80" alt="此去经年 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for 此去经年">此去经年</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">小布先生的Blog</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Blogを読む" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="/tags/">读书笔记</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+  <li class="navigation__item">
+    <a href="https://weibo.com/p/1005051692500745" title="Weibo" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li> 
+
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/bloodspasm" title="GitHub" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  <li class="navigation__item">
+    <a href="https://twitter.com/bloodspasm" title="Twitter" target="_blank">
+      <i class='social fa fa-twitter'></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+
+  
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2018-10-25T02:32:04.000Z" class="post-list__meta--date date">2018-10-25</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/node/">node</a>, <a class="tag-link" href="/tags/tool/">tool</a>
+ </span>
+      <span class="page-pv">
+       No. <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">关于微博图床</h1>
+  </header>
+
+  <section class="post">
+    <center><strong>关于微博图床 作者:bloodspasm</strong></center>
+
+<p>开发环境 Nodejs.根据微博的上传预览接口<code>http://picupload.service.weibo.com/interface/pic_upload.php?mime=image%2Fjpeg&amp;data=base64&amp;url=0&amp;markpos=1&amp;logo=&amp;nick=0&amp;marks=1&amp;app=miniblog</code>制作;</p>
+<p>###新浪微博登录(无加密接口版本)<br>先调用登录获取cookie保存到一个cookie.txt<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * 新浪微博登录(无加密接口版本)</span><br><span class="line"> * @param  string $u 用户名</span><br><span class="line"> * @param  string $p 密码</span><br><span class="line"> * @return string    返回最有用最精简的cookie</span><br><span class="line"> */</span><br><span class="line">async function login($u, $p) &#123;</span><br><span class="line">    let cookie = fs.readFileSync(&apos;cookie.txt&apos;).toString();</span><br><span class="line">    if (cookie) &#123; return cookie; &#125;</span><br><span class="line">    const $loginUrl = &apos;https://login.sina.com.cn/sso/login.php?client=ssologin.js(v1.4.15)&amp;_=1403138799543&apos;;</span><br><span class="line">    const $loginData = &#123;&#125;;</span><br><span class="line">    $loginData[&apos;entry&apos;] = &apos;sso&apos;;</span><br><span class="line">    $loginData[&apos;gateway&apos;] = &apos;1&apos;;</span><br><span class="line">    $loginData[&apos;from&apos;] = &apos;null&apos;;</span><br><span class="line">    $loginData[&apos;savestate&apos;] = &apos;30&apos;;</span><br><span class="line">    $loginData[&apos;useticket&apos;] = &apos;0&apos;;</span><br><span class="line">    $loginData[&apos;pagerefer&apos;] = &apos;&apos;;</span><br><span class="line">    $loginData[&apos;vsnf&apos;] = &apos;1&apos;;</span><br><span class="line">    $loginData[&apos;su&apos;] = Buffer.from($u).toString(&apos;base64&apos;)</span><br><span class="line">    $loginData[&apos;service&apos;] = &apos;sso&apos;;</span><br><span class="line">    $loginData[&apos;sp&apos;] = $p;</span><br><span class="line">    $loginData[&apos;sr&apos;] = &apos;1920*1080&apos;;</span><br><span class="line">    $loginData[&apos;encoding&apos;] = &apos;UTF-8&apos;;</span><br><span class="line">    $loginData[&apos;cdult&apos;] = &apos;3&apos;;</span><br><span class="line">    $loginData[&apos;domain&apos;] = &apos;sina.com.cn&apos;;</span><br><span class="line">    $loginData[&apos;prelt&apos;] = &apos;0&apos;;</span><br><span class="line">    $loginData[&apos;returntype&apos;] = &apos;TEXT&apos;;</span><br><span class="line">    const res = await axios.post($loginUrl, querystring.stringify($loginData), &#123;</span><br><span class="line">        headers: &#123;</span><br><span class="line">            &quot;Content-Type&quot;: &quot;application/x-www-form-urlencoded&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    cookie = res.headers[&apos;set-cookie&apos;][1];</span><br><span class="line">    fs.writeFileSync(&apos;cookie.txt&apos;, cookie);</span><br><span class="line">    return cookie;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>###上传图片接口<br>下来再调用上传图片接口如果cookie为空去登录再去上传<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">async function uploadFile(b64_data) &#123;</span><br><span class="line">    const weiboAccount = &quot;账号;密码&quot;;</span><br><span class="line">    if (!weiboAccount) &#123; return console.log(&apos;请设置环境变量 WEIBO_ACCOUNT 格式为 username;password&apos;); &#125;</span><br><span class="line">    const [$u, $p] = weiboAccount.split(&apos;;&apos;);</span><br><span class="line">    const cookie = await login($u, $p);</span><br><span class="line">    const $uploadUrl = &apos;http://picupload.service.weibo.com/interface/pic_upload.php?mime=image%2Fjpeg&amp;data=base64&amp;url=0&amp;markpos=1&amp;logo=&amp;nick=0&amp;marks=1&amp;app=miniblog&apos;;</span><br><span class="line">    const $uploadData = &#123; b64_data &#125;;</span><br><span class="line">    const res = await axios.post($uploadUrl, querystring.stringify($uploadData), &#123;</span><br><span class="line">        headers: &#123;</span><br><span class="line">            &quot;Content-Type&quot;: &quot;application/x-www-form-urlencoded&quot;,</span><br><span class="line">            &apos;Cookie&apos;: cookie</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    const code = res.data.match(/&quot;code&quot;:&quot;(\w+)&quot;/)[1];</span><br><span class="line">    if (code == &apos;A20001&apos;) &#123;</span><br><span class="line">        fs.writeFileSync(&apos;cookie.txt&apos;, &apos;&apos;);</span><br><span class="line">        return upload(b64_data);;</span><br><span class="line">    &#125;</span><br><span class="line">    const $pid = res.data.match(/&quot;pid&quot;:&quot;(\w+)&quot;/)[1];</span><br><span class="line">    // 所有尺寸：&apos;large&apos;, &apos;mw1024&apos;, &apos;mw690&apos;, &apos;bmiddle&apos;, &apos;small&apos;, &apos;thumb180&apos;, &apos;thumbnail&apos;, &apos;square&apos;</span><br><span class="line">    return `//ws$&#123;(crc32($pid) &amp; 3) + 1&#125;.sinaimg.cn/large/$&#123;$pid&#125;.$&#123;$pid[21] === &apos;g&apos; ? &apos;gif&apos; : &apos;jpg&apos;&#125;`;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>###测试</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -F "key=value" -F "file=@文件绝对路径" 上传文件接口</span><br></pre></td></tr></table></figure>
+<p>###关于Mac生成Workflow</p>
+<p><img src="https://ws1.sinaimg.cn/large/007vjDLQly1fxy9m8oyp1j31eo0o8tbd.jpg" alt="屏幕快照 2018-12-07 下午4.32.38"></p>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">新しい記事</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/10/25/2018-11-01 CTMediator有感/" title="CTMediator有感">CTMediator有感</a></h2>
+                <p class="excerpt">
+                
+                CTMediator有感 作者:bloodspasm
+
+组件化比较苦恼的是数据的传递和页面的跳转,看了CTMediator的Demo对组件化的实施一个有感记录.
+关于CTMediator是一个路由,但是要完成这路由其实还要3个文件:
+
+路由文件 CTMediator+A:主要是对路由指向
+参数文件 
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-10-25T02:32:04.000Z" class="post-list__meta--date date">2018-10-25</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>, <a class="tag-link" href="/tags/组件化/">组件化</a>
+</span><a class="btn-border-small" href="/2018/10/25/2018-11-01 CTMediator有感/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">以前の記事</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/10/25/2018-10-25 飞冰Ice/" title="飞冰ICE 笔记">飞冰ICE 笔记</a></h2>
+                <p class="excerpt">
+                
+                飞冰ICE 笔记 作者:bloodspasm
+
+
+安装失败
+
+在运行日志中使用sudo运行
+1sudo cnpm i
+
+bulid 失败
+
+在package.json中修改build的路径
+12345//修改前  &#34;scripts&#34;: &amp;#123;    &#34;start&#34;: &#34;rax-scripts 
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-10-25T02:32:04.000Z" class="post-list__meta--date date">2018-10-25</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/RN/">RN</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/node/">node</a>
+</span><a class="btn-border-small" href="/2018/10/25/2018-10-25 飞冰Ice/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2018 bloodspasm - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建，使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题，由<a href="https://monniya.com ">@Monniya</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?41918936ba907ae92396430db2ac1aa1";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>

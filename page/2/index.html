@@ -67,7 +67,7 @@
           <div>
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+              <li class="navigation__item"><a href="/#blog" title="Blogを読む" class="blog-button">Blog</a></li>
             
               <li class="navigation__item"><a href="/tags/">读书笔记</a></li>
             
@@ -142,33 +142,54 @@
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/03/14/2018-03-14 webstorm快捷键/" title="link to post.title">webstorm快捷键</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2018/04/18/2018-04-18 Electron/" title="link to post.title">Electron环境安装</a></h2>
       <p class="excerpt">
     
-      花+Shif+/    多行注释花+/            注释花+Shif+上    上移动花+Opt+L        整理代码
+      
+官网:https://electronjs.org/
 
+#安装
+我以api的demo做演示官方Demo代码:
+1234git clone https://github.com/electron/electron-api-demoscd electron-api-demosnpm installnpm start
+
+npm install 注意
+
+
+npm install:可能会比较慢 使用cnp
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2018-03-14T09:13:21.000Z" class="post-list__meta--date date">2018-03-14</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/ide/">ide</a>, <a class="tag-link" href="/tags/js/">js</a>
-</span><a class="btn-border-small" href="/2018/03/14/2018-03-14 webstorm快捷键/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2018-04-18T02:39:38.000Z" class="post-list__meta--date date">2018-04-18</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Electron/">Electron</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/js/">js</a>
+</span><a class="btn-border-small" href="/2018/04/18/2018-04-18 Electron/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/03/14/面试笔记2/" title="link to post.title">iOS面试笔记 - 内存管理</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2018/04/14/2018-04-14 Pod组件化/" title="link to post.title">Pod组件化</a></h2>
       <p class="excerpt">
     
-      
-1.什么是ARC？
+      #1 安装Pod
+1、升级Ruby环境
 
-ARC是automatic reference counting自动引用计数，在程序编译时自动加入retain/release。在对象被创建时retain count+1，在对象被release时count-1，当count=0时，销毁对象。程序中加入autoreleasepool对象会由系统自动加上autorelease方法，如果该对象引用计数为0，则销毁。那么ARC是为
+sudo gem update --system
+
+2、更换Ruby镜像
+
+首先移除现有的Ruby镜像
+
+gem sources --remove https://rubygems.org/
+
+然后添加国内最新镜像源
+
+gem sources -a https://gems.ruby-china.org/
+
+执行完毕之后输入gem sources -l来查
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2018-03-14T09:13:21.000Z" class="post-list__meta--date date">2018-03-14</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>, <a class="tag-link" href="/tags/面试/">面试</a>
-</span><a class="btn-border-small" href="/2018/03/14/面试笔记2/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2018-04-14T02:40:55.000Z" class="post-list__meta--date date">2018-04-14</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>, <a class="tag-link" href="/tags/pod/">pod</a>
+</span><a class="btn-border-small" href="/2018/04/14/2018-04-14 Pod组件化/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
@@ -204,6 +225,38 @@ FMDatabaseQueue使用下面这个函数对数据库进行操作，通过描述�
       <div class="post-list__meta"><time datetime="2018-03-14T09:13:21.000Z" class="post-list__meta--date date">2018-03-14</time> &#8226; <span class="post-list__meta--tags tags">于 
   <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>, <a class="tag-link" href="/tags/面试/">面试</a>
 </span><a class="btn-border-small" href="/2018/03/14/面试笔记1/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/03/14/面试笔记2/" title="link to post.title">iOS面试笔记 - 内存管理</a></h2>
+      <p class="excerpt">
+    
+      
+1.什么是ARC？
+
+ARC是automatic reference counting自动引用计数，在程序编译时自动加入retain/release。在对象被创建时retain count+1，在对象被release时count-1，当count=0时，销毁对象。程序中加入autoreleasepool对象会由系统自动加上autorelease方法，如果该对象引用计数为0，则销毁。那么ARC是为
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-03-14T09:13:21.000Z" class="post-list__meta--date date">2018-03-14</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>, <a class="tag-link" href="/tags/面试/">面试</a>
+</span><a class="btn-border-small" href="/2018/03/14/面试笔记2/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/03/14/2018-03-14 webstorm快捷键/" title="link to post.title">webstorm快捷键</a></h2>
+      <p class="excerpt">
+    
+      花+Shif+/    多行注释花+/            注释花+Shif+上    上移动花+Opt+L        整理代码
+
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-03-14T09:13:21.000Z" class="post-list__meta--date date">2018-03-14</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/ide/">ide</a>, <a class="tag-link" href="/tags/js/">js</a>
+</span><a class="btn-border-small" href="/2018/03/14/2018-03-14 webstorm快捷键/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
@@ -254,26 +307,6 @@ FMDatabaseQueue使用下面这个函数对数据库进行操作，通过描述�
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/28/2018-02-28/" title="link to post.title">LuaView学习(三)</a></h2>
-      <p class="excerpt">
-    
-      
-Object-C调用Lua
-
-查看Demo发现在LuaViewCore有一段代码,是适用于Object-C调用Lua的方法的
-12//iOS端[self callLua:@&#34;debug_runing_execute&#34; args:@[cmd]];
-在Lua的使用是
-1234567891011121314151617181920function debug_runing_execute( cmd )
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-02-28T05:45:46.000Z" class="post-list__meta--date date">2018-02-28</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2018/02/28/2018-02-28/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
       <h2 class="post-list__post-title post-title"><a href="/2018/02/28/npm笔记/" title="link to post.title">npm笔记</a></h2>
       <p class="excerpt">
     
@@ -296,40 +329,21 @@ n lts
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/08/2018-02-08_LuaView(二)/" title="link to post.title">LuaView学习(二)</a></h2>
-      <p class="excerpt">
-    
-      因为LuaView没有直接提供的上下滚动Scrollviewhttps://github.com/alibaba/LuaViewSDK/issues/65所以我们自己打造一个全能的支持上下滚动View
-思路正如作者说用RefreshCollectionView来去实现
-12345678910111213141516171819202122232425262728293031323334353637
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-02-08T06:42:44.000Z" class="post-list__meta--date date">2018-02-08</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2018/02/08/2018-02-08_LuaView(二)/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/06/2018-02-06_LuaView(一)/" title="link to post.title">LuaView学习(一)</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2018/02/28/2018-02-28/" title="link to post.title">LuaView学习(三)</a></h2>
       <p class="excerpt">
     
       
-安装
+Object-C调用Lua
 
-
-Pods引入（推荐）
- 在目标工程Podfile中加入如下命令，可以自动将最新的LuaViewSDK和对应的Lua虚拟机代码同时引入：
-pod &amp;apos;LuaViewSDK&amp;apos;, :git =&amp;gt; &amp;apos;git@gitlab.alibaba-inc.com:luaview/LuaViewSDK.git&amp;apos;
-
-源码引入
- 在Github上clone或者下载最
+查看Demo发现在LuaViewCore有一段代码,是适用于Object-C调用Lua的方法的
+12//iOS端[self callLua:@&#34;debug_runing_execute&#34; args:@[cmd]];
+在Lua的使用是
+1234567891011121314151617181920function debug_runing_execute( cmd )
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2018-02-06T07:08:53.000Z" class="post-list__meta--date date">2018-02-06</time> &#8226; <span class="post-list__meta--tags tags">于 
+      <div class="post-list__meta"><time datetime="2018-02-28T05:45:46.000Z" class="post-list__meta--date date">2018-02-28</time> &#8226; <span class="post-list__meta--tags tags">于 
   <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2018/02/06/2018-02-06_LuaView(一)/">继续阅读</a></div>
+</span><a class="btn-border-small" href="/2018/02/28/2018-02-28/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
@@ -339,11 +353,11 @@ pod &amp;apos;LuaViewSDK&amp;apos;, :git =&amp;gt; &amp;apos;git@gitlab.alibaba-
 
   <nav class="pagination" role="navigation">
     
-      <a class="older-posts pagination__newer btn btn-small btn-tertiary" href="/#blog">&larr; Prev</a>
+      <a class="older-posts pagination__newer btn btn-small btn-tertiary" href="/#blog">&larr; 前へ</a>
     
     <span class="pagination__page-number" >  2 / 3 </span>
     
-      <a class="older-posts pagination__older btn btn-small btn-tertiary" href="/page/3/">Next &rarr;</a>
+      <a class="older-posts pagination__older btn btn-small btn-tertiary" href="/page/3/">次へ &rarr;</a>
     
   </nav>
 
