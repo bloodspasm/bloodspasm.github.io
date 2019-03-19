@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>gulp4.0打包 | 此去经年</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="gulp4.0打包 | 此去经年">
+    <meta name="twitter:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="gulp4.0打包 | 此去经年">
+    <meta property="og:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
+
+    
+    <meta name="author" content="bloodspasm">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/favicon.ico">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+
+    <link rel="canonical" href="http://yoursite.com/2019/03/19/2019-03-19 gulp使用/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 此去经年 的主页"><img src="/images/default_avatar.png" width="80" alt="此去经年 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for 此去经年">此去经年</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">小布先生的Blog</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="/tags/">读书笔记</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+  <li class="navigation__item">
+    <a href="https://weibo.com/p/1005051692500745" title="Weibo" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li> 
+
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/bloodspasm" title="GitHub" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  <li class="navigation__item">
+    <a href="https://twitter.com/bloodspasm" title="Twitter" target="_blank">
+      <i class='social fa fa-twitter'></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+
+  
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2019-03-19T05:39:43.000Z" class="post-list__meta--date date">2019-03-19</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/HTML/">HTML</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/node/">node</a>
+ </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">gulp4.0打包</h1>
+  </header>
+
+  <section class="post">
+    <center><strong>gulp4.0打包<br> 作者:bloodspasm</strong></center>
+
+<blockquote>
+<p>环境</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g gulp </span><br><span class="line"></span><br><span class="line">文件路径</span><br><span class="line"></span><br><span class="line">|- root</span><br><span class="line">|    </span><br><span class="line">|-dist  //此目录为下面生成的</span><br><span class="line">|-css</span><br><span class="line">|         |-js</span><br><span class="line">|         |-images</span><br><span class="line">|         |-fonts</span><br><span class="line">|         |-rev</span><br><span class="line">|         |-index.html</span><br><span class="line">|    |-node_modules</span><br><span class="line">|    |-src   //资源目录</span><br><span class="line">|         |-css</span><br><span class="line">|         |-js</span><br><span class="line">|         |-fonts</span><br><span class="line">|         |-images</span><br><span class="line">|         index.html</span><br><span class="line">|     gulpfile.js</span><br><span class="line">|     package.json</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">cnpm install gulp-jshint gulp-csso gulp-uglify gulp-htmlmin gulp-clean gulp-rev  gulp-autoprefixer gulp-rev-collector --save-dev</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>gulp.js文件</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>),</span><br><span class="line">    csso = <span class="built_in">require</span>(<span class="string">'gulp-csso'</span>),    <span class="comment">//css压缩</span></span><br><span class="line">    jshint = <span class="built_in">require</span>(<span class="string">'gulp-jshint'</span>),    <span class="comment">//js检查</span></span><br><span class="line">    uglify = <span class="built_in">require</span>(<span class="string">'gulp-uglify'</span>),    <span class="comment">//js压缩 </span></span><br><span class="line">    htmlMin = <span class="built_in">require</span>(<span class="string">'gulp-htmlmin'</span>),   <span class="comment">//压缩html</span></span><br><span class="line">    clean = <span class="built_in">require</span>(<span class="string">'gulp-clean'</span>),    <span class="comment">//清空文件夹</span></span><br><span class="line">    rev = <span class="built_in">require</span>(<span class="string">'gulp-rev'</span>),    <span class="comment">//更改版本名 md5后缀</span></span><br><span class="line">    autoFx = <span class="built_in">require</span>(<span class="string">'gulp-autoprefixer'</span>),    <span class="comment">//加浏览器前缀</span></span><br><span class="line">    revCollector = <span class="built_in">require</span>(<span class="string">'gulp-rev-collector'</span>);    <span class="comment">//gulp-rev 的插件，用于html模板更改引用路径</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//清空文件夹</span></span><br><span class="line">gulp.task(<span class="string">'clean'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">'dist'</span>, &#123;<span class="attr">read</span>:<span class="literal">false</span>&#125;)</span><br><span class="line">               .pipe(clean());</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//压缩css/加浏览器前缀</span></span><br><span class="line">gulp.task(<span class="string">'css'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">     <span class="keyword">return</span> gulp.src(<span class="string">'src/css/*.css'</span>)</span><br><span class="line">         .pipe(csso())</span><br><span class="line">         .pipe(rev())</span><br><span class="line">         .pipe(gulp.dest(<span class="string">'dist/css'</span>))</span><br><span class="line">         .pipe(rev.manifest())</span><br><span class="line">         .pipe(gulp.dest(<span class="string">'dist/rev/css'</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//压缩js</span></span><br><span class="line">gulp.task(<span class="string">'js'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">'src/js/*.js'</span>)</span><br><span class="line">        .pipe(uglify())</span><br><span class="line">        .pipe(rev())</span><br><span class="line">         .pipe(gulp.dest(<span class="string">'dist/js'</span>))</span><br><span class="line">        .pipe(rev.manifest())</span><br><span class="line">        .pipe(gulp.dest(<span class="string">'dist/rev/js'</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//压缩font</span></span><br><span class="line">gulp.task(<span class="string">'font'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">'src/fonts/*'</span>)</span><br><span class="line">        .pipe(rev())</span><br><span class="line">         .pipe(gulp.dest(<span class="string">'dist/fonts'</span>))</span><br><span class="line">        .pipe(rev.manifest())</span><br><span class="line">        .pipe(gulp.dest(<span class="string">'dist/rev/fonts'</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//压缩image</span></span><br><span class="line">gulp.task(<span class="string">'image'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src(<span class="string">'src/images/*.&#123;png,jpg,gif,ico&#125;'</span>)</span><br><span class="line">               .pipe(rev())</span><br><span class="line">               .pipe(gulp.dest(<span class="string">'dist/images'</span>))</span><br><span class="line">               .pipe(rev.manifest())</span><br><span class="line">               .pipe(gulp.dest(<span class="string">'dist/rev/images'</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//改变css引用路径</span></span><br><span class="line">gulp.task(<span class="string">'revCss'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src([<span class="string">'dist/rev/**/*.json'</span>,<span class="string">'dist/css/*.css'</span>])</span><br><span class="line">               .pipe(revCollector(&#123;</span><br><span class="line">                       replaceReved: <span class="literal">true</span></span><br><span class="line">           &#125;))</span><br><span class="line">               .pipe(gulp.dest(<span class="string">'dist/css'</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//改变html引用路径</span></span><br><span class="line">gulp.task(<span class="string">'rev'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> gulp.src([<span class="string">'dist/rev/**/*.json'</span>,<span class="string">'src/*.html'</span>])</span><br><span class="line">               .pipe(revCollector(&#123;</span><br><span class="line">                       replaceReved: <span class="literal">true</span></span><br><span class="line">               &#125;))</span><br><span class="line">               .pipe(htmlMin(&#123;<span class="attr">collapseWhitespace</span>: <span class="literal">true</span>&#125;))</span><br><span class="line">               .pipe(gulp.dest(<span class="string">'dist/'</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">gulp.task(<span class="string">'default'</span>, gulp.series(<span class="string">'clean'</span>, <span class="string">'css'</span>, <span class="string">'js'</span>, <span class="string">'font'</span>,<span class="string">'image'</span>, <span class="string">'revCss'</span>, <span class="string">'rev'</span>, (done) =&gt; done()))</span><br></pre></td></tr></table></figure>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/12/10/2019-03-04 cordova打包/" title="cordova打包">cordova打包</a></h2>
+                <p class="excerpt">
+                
+                cordova打包 作者:bloodspasm
+
+
+环境
+
+ 
+ 注: cnpm install -g cordova@6.0.0
+
+创建
+
+ 12345cordova create hello com.example.hello HelloWorld-hello 文件夹名称-com.example
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-12-10T10:13:14.000Z" class="post-list__meta--date date">2018-12-10</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/HTML/">HTML</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/cordova/">cordova</a>
+</span><a class="btn-border-small" href="/2018/12/10/2019-03-04 cordova打包/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2019 bloodspasm - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建，使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题，由<a href="https://monniya.com ">@Monniya</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?41918936ba907ae92396430db2ac1aa1";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>

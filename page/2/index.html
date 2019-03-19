@@ -67,7 +67,7 @@
           <div>
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="/#blog" title="Blogを読む" class="blog-button">Blog</a></li>
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
             
               <li class="navigation__item"><a href="/tags/">读书笔记</a></li>
             
@@ -142,6 +142,142 @@
   
     
     <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/10/12/2018-10-12 ARC/" title="link to post.title">ARC 笔记</a></h2>
+      <p class="excerpt">
+    
+      ARC 手动 作者:bloodspasm
+
+123#if !__has_feature(objc_arc)    [za release];#endif
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-10-12T01:01:29.000Z" class="post-list__meta--date date">2018-10-12</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/ARC/">ARC</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
+</span><a class="btn-border-small" href="/2018/10/12/2018-10-12 ARC/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/09/14/2018-09-14 七牛/" title="link to post.title">Node七牛笔记</a></h2>
+      <p class="excerpt">
+    
+      Node七牛笔记 作者:bloodspasm
+
+
+#七牛基础功能
+
+图片尺寸: 300x300 图片质量50%
+
+ 
+
+图片瘦身: URL+?+imageslim 
+
+
+#七牛第三方资源上传
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253var qin
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-09-14T09:02:58.000Z" class="post-list__meta--date date">2018-09-14</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/node/">node</a>, <a class="tag-link" href="/tags/七牛/">七牛</a>
+</span><a class="btn-border-small" href="/2018/09/14/2018-09-14 七牛/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/08/09/2018-08-09 爬虫笔记/" title="link to post.title">Nodejs爬虫笔记</a></h2>
+      <p class="excerpt">
+    
+      Nodejs爬虫笔记 作者:bloodspasm
+
+
+#爬虫
+简单的爬虫就是一个html比如说baidu,你只要直接访问就可以直接获取他们的内容123456789var url = &#34;https://www.baidu.com&#34; request (&amp;#123;    url: url,    method: &#34;GET&#34;&amp;#125;, function(error, response, body) 
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-08-09T05:41:07.000Z" class="post-list__meta--date date">2018-08-09</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/node/">node</a>, <a class="tag-link" href="/tags/爬虫/">爬虫</a>
+</span><a class="btn-border-small" href="/2018/08/09/2018-08-09 爬虫笔记/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/07/31/2018-07-31 Vue学习笔记/" title="link to post.title">Vue学习笔记</a></h2>
+      <p class="excerpt">
+    
+      Vue学习笔记 作者:bloodspasm
+
+
+#生命周期
+123456789101112131415161718192021222324252627282930,   // created() &amp;#123;   //   console.log(&amp;quot;created&amp;quot;);   // &amp;#125;,   // mounted() &amp;#123;   //   console.log(
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-07-31T03:19:08.000Z" class="post-list__meta--date date">2018-07-31</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/算法/">算法</a>
+</span><a class="btn-border-small" href="/2018/07/31/2018-07-31 Vue学习笔记/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/05/16/2018-05-16 视频加密/" title="link to post.title">文件加密/视频加密</a></h2>
+      <p class="excerpt">
+    
+      文件加密/视频加密 作者:bloodspasm
+
+
+
+思路
+
+我开始想的是不管是视频还是其他文件加密应该是对数据流的加密,我想到使用NSStream在实际的操作的时候发现效率太低了 一个 100MB+文件 解密加密耗时太久了,于是打算用C来操作
+大概思路让我想想
+
+
+加密-&amp;gt;判断是否加密-&amp;gt;文件头加密-&amp;gt;内容加密解密-&amp;gt;判断文件头-&amp;gt;对内容解密    代码:假定文件前
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-05-16T00:56:56.000Z" class="post-list__meta--date date">2018-05-16</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/算法/">算法</a>
+</span><a class="btn-border-small" href="/2018/05/16/2018-05-16 视频加密/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/05/09/2018-05-09 八皇后/" title="link to post.title">八皇后问题</a></h2>
+      <p class="excerpt">
+    
+      八皇后问题 作者:bloodspasm
+
+1234567891011121314151617181920212223242526272829303132function queen(a,cur)&amp;#123;    if(cur==a.length)&amp;#123;        //是否算完8个列        console.log(a);        return    &amp;#125;;    f
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-05-09T00:56:56.000Z" class="post-list__meta--date date">2018-05-09</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/算法/">算法</a>
+</span><a class="btn-border-small" href="/2018/05/09/2018-05-09 八皇后/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/04/18/2018-04-18 SDWebImage/" title="link to post.title">SDWebImage加载大图,多图,高清图导致奔溃问题</a></h2>
+      <p class="excerpt">
+    
+      SDWebImage大图处理 作者:bloodspasm
+
+一直加载图片都是用的SDWebImage这个框架，今天在加载多张图片的时候，程序突然崩溃了，真是一脸闷逼，找了好久，最后发现是加载图片导致的。于是上网搜索了一下，原来很多人也遇到了这个问题，按照网上大神提供的方法进行了修改，问题就解决了。
+熟悉OpenGL的同学知道，GPU内次渲染图形的时候分为 片段着色器(FrameShade)和顶点着
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-04-18T09:40:54.000Z" class="post-list__meta--date date">2018-04-18</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/SDWebImage/">SDWebImage</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
+</span><a class="btn-border-small" href="/2018/04/18/2018-04-18 SDWebImage/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
       <h2 class="post-list__post-title post-title"><a href="/2018/04/18/2018-04-18 Electron/" title="link to post.title">Electron环境安装</a></h2>
       <p class="excerpt">
     
@@ -209,155 +345,16 @@ gem sources -a https://gems.ruby-china.org/
     </li>
   
     
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/03/14/面试笔记1/" title="link to post.title">iOS面试笔记 - 杂记</a></h2>
-      <p class="excerpt">
-    
-      
-AFN
-
-
-关于超时:
-请求超时
-获取超时
-发送超时
-
-设置代理:userseisson
-
-
-
-FMDB
-
-FMDatabaseQueue解决线程安全的操作方法：
-FMDatabaseQueue使用下面这个函数对数据库进行操作，通过描述可知，这样等于是把数据库的操作放到一个串行队列中，从而保证不会在同一时间对数据库做改动。
-
-深浅copy        
-
-
-浅-地址(短短为浅 NS + cop
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-03-14T09:13:21.000Z" class="post-list__meta--date date">2018-03-14</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>, <a class="tag-link" href="/tags/面试/">面试</a>
-</span><a class="btn-border-small" href="/2018/03/14/面试笔记1/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/03/14/面试笔记2/" title="link to post.title">iOS面试笔记 - 内存管理</a></h2>
-      <p class="excerpt">
-    
-      
-1.什么是ARC？
-
-ARC是automatic reference counting自动引用计数，在程序编译时自动加入retain/release。在对象被创建时retain count+1，在对象被release时count-1，当count=0时，销毁对象。程序中加入autoreleasepool对象会由系统自动加上autorelease方法，如果该对象引用计数为0，则销毁。那么ARC是为
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-03-14T09:13:21.000Z" class="post-list__meta--date date">2018-03-14</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>, <a class="tag-link" href="/tags/面试/">面试</a>
-</span><a class="btn-border-small" href="/2018/03/14/面试笔记2/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/03/09/2018-03-09-1/" title="link to post.title">ES6 Promise</a></h2>
-      <p class="excerpt">
-    
-      ES6 Promise 用法讲解123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869function runAsync()&amp;#123;        var p = new Promise(fu
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-03-09T05:56:05.000Z" class="post-list__meta--date date">2018-03-09</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/ES6/">ES6</a>, <a class="tag-link" href="/tags/Promise/">Promise</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/js/">js</a>
-</span><a class="btn-border-small" href="/2018/03/09/2018-03-09-1/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/03/09/2018-03-09-2/" title="link to post.title">ES6 Promise</a></h2>
-      <p class="excerpt">
-    
-      
-　文件
-
-123456789101112/**    * 读取json    * @returns &amp;#123;Array&amp;#125;    */   self.readjson = function () &amp;#123;       var data = fs.readFileSync(path.resolve(__dirname, &#39;..&#39;)+&#34;/public/wbPushRss.json&#34;,
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-03-09T05:56:05.000Z" class="post-list__meta--date date">2018-03-09</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/ES6/">ES6</a>, <a class="tag-link" href="/tags/Promise/">Promise</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/js/">js</a>
-</span><a class="btn-border-small" href="/2018/03/09/2018-03-09-2/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/03/09/2018-03-09/" title="link to post.title">小饼干食物摄入</a></h2>
-      <p class="excerpt">
-    
-      
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-03-09T05:56:05.000Z" class="post-list__meta--date date">2018-03-09</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/cookie/">cookie</a>, <a class="tag-link" href="/tags/food/">food</a>, <a class="tag-link" href="/tags/lift/">lift</a>
-</span><a class="btn-border-small" href="/2018/03/09/2018-03-09/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/28/2018-02-28/" title="link to post.title">LuaView学习(三)</a></h2>
-      <p class="excerpt">
-    
-      
-Object-C调用Lua
-
-查看Demo发现在LuaViewCore有一段代码,是适用于Object-C调用Lua的方法的
-12//iOS端[self callLua:@&#34;debug_runing_execute&#34; args:@[cmd]];
-在Lua的使用是
-1234567891011121314151617181920function debug_runing_execute( cmd )
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-02-28T05:45:46.000Z" class="post-list__meta--date date">2018-02-28</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/LuaView/">LuaView</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>
-</span><a class="btn-border-small" href="/2018/02/28/2018-02-28/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/02/28/npm笔记/" title="link to post.title">npm笔记</a></h2>
-      <p class="excerpt">
-    
-      升级 : npm install -g npm
-淘宝 : –registry=https://registry.npm.taobao.org
-node管理: 
-npm install -g n
-n lts
-
-警告
-
-1234567npm WARN弃用toiso-string@0.0.2：to-iso-string已被弃用，请改用@ segment / to-iso-string。npm WARN弃
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-02-28T05:45:46.000Z" class="post-list__meta--date date">2018-02-28</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/node/">node</a>, <a class="tag-link" href="/tags/npm/">npm</a>
-</span><a class="btn-border-small" href="/2018/02/28/npm笔记/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
   </ol>
 
 
   <nav class="pagination" role="navigation">
     
-      <a class="older-posts pagination__newer btn btn-small btn-tertiary" href="/#blog">&larr; 前へ</a>
+      <a class="older-posts pagination__newer btn btn-small btn-tertiary" href="/#blog">&larr; Prev</a>
     
-    <span class="pagination__page-number" >  2 / 3 </span>
+    <span class="pagination__page-number" >  2 / 4 </span>
     
-      <a class="older-posts pagination__older btn btn-small btn-tertiary" href="/page/3/">次へ &rarr;</a>
+      <a class="older-posts pagination__older btn btn-small btn-tertiary" href="/page/3/">Next &rarr;</a>
     
   </nav>
 
@@ -384,7 +381,7 @@ n lts
 
             <footer class="footer">
     <span class="footer__copyright">
-        &copy; 2018 bloodspasm - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+        &copy; 2019 bloodspasm - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
        
     </span>
     <span class="footer__copyright">
