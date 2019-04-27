@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗？ | 此去经年</title>
+    <title>TensorFlow版本 | 此去经年</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -15,11 +15,11 @@
     <meta name="description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗？ | 此去经年">
+    <meta name="twitter:title" content="TensorFlow版本 | 此去经年">
     <meta name="twitter:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗？ | 此去经年">
+    <meta property="og:title" content="TensorFlow版本 | 此去经年">
     <meta property="og:description" content="如今的我，谈不上幸福，也谈不上不幸。一切都会过去的。">
 
     
@@ -35,7 +35,7 @@
     <meta name="generator" content="hexo"/>
     
 
-    <link rel="canonical" href="http://yoursite.com/2018/01/31/2018-02-01_想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗/"/>
+    <link rel="canonical" href="http://yoursite.com/2019/04/27/2019-04-27 TensorFlow版本/"/>
 
                  
 </head>
@@ -140,20 +140,29 @@
 
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2018-01-31T06:50:56.000Z" class="post-list__meta--date date">2018-01-31</time> &#8226; <span class="post-meta__tags tags">于 
-  <a class="tag-link" href="/tags/life/">life</a>, <a class="tag-link" href="/tags/游戏/">游戏</a>, <a class="tag-link" href="/tags/知乎/">知乎</a>
+      <time datetime="2019-04-27T03:35:00.000Z" class="post-list__meta--date date">2019-04-27</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/Anaconda/">Anaconda</a>, <a class="tag-link" href="/tags/TensorFlow/">TensorFlow</a>, <a class="tag-link" href="/tags/环境/">环境</a>
  </span>
       <span class="page-pv">
        Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
       </span> 
    
     </div>
-    <h1 class="post-title">想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗？</h1>
+    <h1 class="post-title">TensorFlow版本</h1>
   </header>
 
   <section class="post">
-    <p>会的 不然我也不会游戏把性别改女.<br>新赛季截图<br><img src="http://p3azy2pd9.bkt.clouddn.com/2018-02-01-1881517468529_.pic.jpg" alt="1881517468529_.pic"><br>新赛季截图<br><img src="http://p3azy2pd9.bkt.clouddn.com/2018-02-01-1891517468529_.pic.jpg" alt="1891517468529_.pic"></p>
-<p>经常打农药水平还行,全能(中单&gt;=辅助&gt;射手&gt;上单&gt;打野),基本上每个赛季上单排王者20-30星.<br><img src="http://p3azy2pd9.bkt.clouddn.com/2018-02-01-1871517468529_.pic.jpg" alt="1871517468529_.pic"><br>也发现一个问题越到后面的玩家其实越在意输赢.如果在低分段输了最多就在游戏里说说,后面都是加好友骂而且骂的很难听比如<br><img src="http://p3azy2pd9.bkt.clouddn.com/2018-02-01-1951517468980_.pic.jpg" alt="1951517468980_.pic"><br>也导致我的好友列表都是加来骂我的人(有的时候心态蹦了真的就没打好)后来我都关闭了好友功能就以为没事了,可是我还是太年轻了<br><img src="http://p3azy2pd9.bkt.clouddn.com/2018-02-01-1941517468908_.pic.jpg" alt="1941517468908_.pic"><br>歪 扎心了~</p>
+    <center><strong>TensorFlow版本<br> 作者:bloodspasm</strong></center>
+
+<p>Anaconda升级TensorFlow版本</p>
+<p>Mac 用户在使用anaconda创建开发环境后，安装的tensorflow默认是1.1版本的，但是如今的tensorflow版本都已经到1.7了，很多代码也是1.4+以上版本，因此升级tensorflow显然是必须的。经过各种搜索，爬过各种坑，这里做一下总结，提供亲测有效的方式。</p>
+<p>1.使用anaconda打开terminal</p>
+<p>2.在terminal界面，输入如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install --ignore-installed --upgrade +(本地tensorflow.whl、网络链接whl文件)</span><br></pre></td></tr></table></figure>
+<p>比如下面分别是Python2和Python3的，cpu版，tensorflow-1.7.0<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.7.0-py2-none-any.whl</span><br><span class="line"></span><br><span class="line">pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.7.0-py3-none-any.whl</span><br></pre></td></tr></table></figure></p>
+<p>如果已经下载好了某个tensorflow版本，直接将上面的地址改成本地的。</p>
+<p>如果更新过程有其它问题：参考下面</p>
+<p><a href="https://zhuanlan.zhihu.com/p/29298402" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/29298402</a></p>
 
   </section>
 
@@ -162,53 +171,28 @@
 <section class="read-more">
            
     
-               
-            <div class="read-more-item">
-                <span class="read-more-item-dim">Newer Post</span>
-                <h2 class="post-list__post-title post-title"><a href="/2018/01/31/2018-01-31_OpenShift/" title="openshift-cli">openshift-cli</a></h2>
-                <p class="excerpt">
-                
-                安装
-//安装 oc命令
-brew install openshift-cli
-
-//登入
-oc login https://console.starter-us-west-2.openshift.com
-
-//查看
-bloodspasmMac:~ bloodspasm$ oc get pods
-N
-                &hellip;
-                </p>
-                <div class="post-list__meta"><time datetime="2018-01-31T06:50:56.000Z" class="post-list__meta--date date">2018-01-31</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/openshift/">openshift</a>
-</span><a class="btn-border-small" href="/2018/01/31/2018-01-31_OpenShift/">继续阅读</a></div>
-                           
-            </div>
         
         
                
             <div class="read-more-item">
                 <span class="read-more-item-dim">Older Post</span>
-                <h2 class="post-list__post-title post-title"><a href="/2018/01/30/2018-01-30_Git/" title="Git">Git</a></h2>
+                <h2 class="post-list__post-title post-title"><a href="/2019/03/19/2019-04-19 ipa文件获取/" title="gulp4.0打包">gulp4.0打包</a></h2>
                 <p class="excerpt">
                 
-                
-tag 分支
+                ipa文件获取 作者:bloodspasm
 
-查看
-git tag
-分支
-git branch &amp;lt;new_name&amp;gt; &amp;lt;old_name&amp;gt;
-git branch tag_ma_6.9.0 v_6.9.0
-删除本地历史
-git gc --prune=now
+①Mac电脑打开App Store，搜索 Apple Configurator 2
+ 
+②打开Apple Configurator 2，点击左上角添加按钮，点击应用
 
+③搜索应用名称，并点击添加按钮
+
+④添加之后会出现如下显示，不要点击，直接进行第5步操
                 &hellip;
                 </p>
-                <div class="post-list__meta"><time datetime="2018-01-30T02:08:05.000Z" class="post-list__meta--date date">2018-01-30</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/git/">git</a>
-</span><a class="btn-border-small" href="/2018/01/30/2018-01-30_Git/">继续阅读</a></div>
+                <div class="post-list__meta"><time datetime="2019-03-19T05:39:43.000Z" class="post-list__meta--date date">2019-03-19</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/app/">app</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>, <a class="tag-link" href="/tags/ipa/">ipa</a>
+</span><a class="btn-border-small" href="/2019/03/19/2019-04-19 ipa文件获取/">继续阅读</a></div>
                        
             </div>
         

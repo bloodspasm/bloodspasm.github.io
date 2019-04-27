@@ -142,123 +142,19 @@
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/01/31/2018-01-31_OpenShift/" title="link to post.title">openshift-cli</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2019/04/27/2019-04-27 TensorFlow版本/" title="link to post.title">TensorFlow版本</a></h2>
       <p class="excerpt">
     
-      安装
-//安装 oc命令
-brew install openshift-cli
+      TensorFlow版本 作者:bloodspasm
 
-//登入
-oc login https://console.starter-us-west-2.openshift.com
-
-//查看
-bloodspasmMac:~ bloodspasm$ oc get pods
-NAME                 READY     STATUS       RESTART
+Anaconda升级TensorFlow版本
+Mac 用户在使用anaconda创建开发环境后，安装的tensorflow默认是1.1版本的，但是如今的tensorflow版本都已经到1.7了，很多代码也是1.4+以上版本，因此升级tensorflow显然是必须的。经过各种搜索，爬过各种坑，这里做一下总结，提供亲测有效的方式。
+1.使用ana
     &hellip;
       </p>
-      <div class="post-list__meta"><time datetime="2018-01-31T06:50:56.000Z" class="post-list__meta--date date">2018-01-31</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/openshift/">openshift</a>
-</span><a class="btn-border-small" href="/2018/01/31/2018-01-31_OpenShift/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/01/31/2018-02-01_想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗/" title="link to post.title">想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗？</a></h2>
-      <p class="excerpt">
-    
-      会的 不然我也不会游戏把性别改女.新赛季截图新赛季截图
-经常打农药水平还行,全能(中单&amp;gt;=辅助&amp;gt;射手&amp;gt;上单&amp;gt;打野),基本上每个赛季上单排王者20-30星.也发现一个问题越到后面的玩家其实越在意输赢.如果在低分段输了最多就在游戏里说说,后面都是加好友骂而且骂的很难听比如也导致我的好友列表都是加来骂我的人(有的时候心态蹦了真的就没打好)后来我都关闭了好友功能就以为没事了,可是我
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-01-31T06:50:56.000Z" class="post-list__meta--date date">2018-01-31</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/life/">life</a>, <a class="tag-link" href="/tags/游戏/">游戏</a>, <a class="tag-link" href="/tags/知乎/">知乎</a>
-</span><a class="btn-border-small" href="/2018/01/31/2018-02-01_想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/01/30/2018-01-30_Git/" title="link to post.title">Git</a></h2>
-      <p class="excerpt">
-    
-      
-tag 分支
-
-查看
-git tag
-分支
-git branch &amp;lt;new_name&amp;gt; &amp;lt;old_name&amp;gt;
-git branch tag_ma_6.9.0 v_6.9.0
-删除本地历史
-git gc --prune=now
-
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-01-30T02:08:05.000Z" class="post-list__meta--date date">2018-01-30</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/git/">git</a>
-</span><a class="btn-border-small" href="/2018/01/30/2018-01-30_Git/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/01/29/新浪云-1-Nodejs/" title="link to post.title">新浪云 1 Nodejs</a></h2>
-      <p class="excerpt">
-    
-      
-环境安装
-
-1. 更新apt
-apt update -y
-apt upgrade -y
-apt install lsof curl vim -y
-2. 安装nvm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
-//重启
-nvm ls-remote
-nvm install v6
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-01-29T09:16:17.000Z" class="post-list__meta--date date">2018-01-29</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/新浪云/">新浪云</a>
-</span><a class="btn-border-small" href="/2018/01/29/新浪云-1-Nodejs/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/01/29/新浪云-0-初始化/" title="link to post.title">新浪云 0 初始化</a></h2>
-      <p class="excerpt">
-    
-      创建 选择容器开发环境 查看 
-12新浪云 1 Nodejshttps://sae.sina.com.cn/?m=replicasmng&amp;amp;app_id=bloodspasm&amp;amp;__r=FTgFF8
-
-git配置
-
-
-
-fileZilla配置
-
-
-
-Sync同步配置(Syncovery for Mac)
-
-配置链接
-
-配置服务端
-
-配置key
-
-
-
-Sync同步配置(Transmit 
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-01-29T08:59:50.000Z" class="post-list__meta--date date">2018-01-29</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/新浪云/">新浪云</a>
-</span><a class="btn-border-small" href="/2018/01/29/新浪云-0-初始化/">继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2019-04-27T03:35:00.000Z" class="post-list__meta--date date">2019-04-27</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/Anaconda/">Anaconda</a>, <a class="tag-link" href="/tags/TensorFlow/">TensorFlow</a>, <a class="tag-link" href="/tags/环境/">环境</a>
+</span><a class="btn-border-small" href="/2019/04/27/2019-04-27 TensorFlow版本/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   

@@ -142,36 +142,18 @@
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/03/14/面试笔记1/" title="link to post.title">iOS面试笔记 - 杂记</a></h2>
+      <h2 class="post-list__post-title post-title"><a href="/2018/03/14/面试笔记2/" title="link to post.title">iOS面试笔记 - 内存管理</a></h2>
       <p class="excerpt">
     
       
-AFN
+1.什么是ARC？
 
-
-关于超时:
-请求超时
-获取超时
-发送超时
-
-设置代理:userseisson
-
-
-
-FMDB
-
-FMDatabaseQueue解决线程安全的操作方法：
-FMDatabaseQueue使用下面这个函数对数据库进行操作，通过描述可知，这样等于是把数据库的操作放到一个串行队列中，从而保证不会在同一时间对数据库做改动。
-
-深浅copy        
-
-
-浅-地址(短短为浅 NS + cop
+ARC是automatic reference counting自动引用计数，在程序编译时自动加入retain/release。在对象被创建时retain count+1，在对象被release时count-1，当count=0时，销毁对象。程序中加入autoreleasepool对象会由系统自动加上autorelease方法，如果该对象引用计数为0，则销毁。那么ARC是为
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2018-03-14T09:13:21.000Z" class="post-list__meta--date date">2018-03-14</time> &#8226; <span class="post-list__meta--tags tags">于 
   <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/iOS/">iOS</a>, <a class="tag-link" href="/tags/面试/">面试</a>
-</span><a class="btn-border-small" href="/2018/03/14/面试笔记1/">继续阅读</a></div>
+</span><a class="btn-border-small" href="/2018/03/14/面试笔记2/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
@@ -191,6 +173,20 @@ FMDatabaseQueue使用下面这个函数对数据库进行操作，通过描述�
   
     
     <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/03/09/2018-03-09-1/" title="link to post.title">ES6 Promise</a></h2>
+      <p class="excerpt">
+    
+      ES6 Promise 用法讲解123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869function runAsync()&amp;#123;        var p = new Promise(fu
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-03-09T05:56:05.000Z" class="post-list__meta--date date">2018-03-09</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/ES6/">ES6</a>, <a class="tag-link" href="/tags/Promise/">Promise</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/js/">js</a>
+</span><a class="btn-border-small" href="/2018/03/09/2018-03-09-1/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
       <h2 class="post-list__post-title post-title"><a href="/2018/03/09/2018-03-09-2/" title="link to post.title">ES6 Promise</a></h2>
       <p class="excerpt">
     
@@ -203,20 +199,6 @@ FMDatabaseQueue使用下面这个函数对数据库进行操作，通过描述�
       <div class="post-list__meta"><time datetime="2018-03-09T05:56:05.000Z" class="post-list__meta--date date">2018-03-09</time> &#8226; <span class="post-list__meta--tags tags">于 
   <a class="tag-link" href="/tags/ES6/">ES6</a>, <a class="tag-link" href="/tags/Promise/">Promise</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/js/">js</a>
 </span><a class="btn-border-small" href="/2018/03/09/2018-03-09-2/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/03/09/2018-03-09-1/" title="link to post.title">ES6 Promise</a></h2>
-      <p class="excerpt">
-    
-      ES6 Promise 用法讲解123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869function runAsync()&amp;#123;        var p = new Promise(fu
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-03-09T05:56:05.000Z" class="post-list__meta--date date">2018-03-09</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/ES6/">ES6</a>, <a class="tag-link" href="/tags/Promise/">Promise</a>, <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/js/">js</a>
-</span><a class="btn-border-small" href="/2018/03/09/2018-03-09-1/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
@@ -303,21 +285,6 @@ pod &amp;apos;LuaViewSDK&amp;apos;, :git =&amp;gt; &amp;apos;git@gitlab.alibaba-
   
     
     <li>
-      <h2 class="post-list__post-title post-title"><a href="/2018/01/31/2018-02-01_想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗/" title="link to post.title">想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗？</a></h2>
-      <p class="excerpt">
-    
-      会的 不然我也不会游戏把性别改女.新赛季截图新赛季截图
-经常打农药水平还行,全能(中单&amp;gt;=辅助&amp;gt;射手&amp;gt;上单&amp;gt;打野),基本上每个赛季上单排王者20-30星.也发现一个问题越到后面的玩家其实越在意输赢.如果在低分段输了最多就在游戏里说说,后面都是加好友骂而且骂的很难听比如也导致我的好友列表都是加来骂我的人(有的时候心态蹦了真的就没打好)后来我都关闭了好友功能就以为没事了,可是我
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2018-01-31T06:50:56.000Z" class="post-list__meta--date date">2018-01-31</time> &#8226; <span class="post-list__meta--tags tags">于 
-  <a class="tag-link" href="/tags/life/">life</a>, <a class="tag-link" href="/tags/游戏/">游戏</a>, <a class="tag-link" href="/tags/知乎/">知乎</a>
-</span><a class="btn-border-small" href="/2018/01/31/2018-02-01_想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
       <h2 class="post-list__post-title post-title"><a href="/2018/01/31/2018-01-31_OpenShift/" title="link to post.title">openshift-cli</a></h2>
       <p class="excerpt">
     
@@ -336,6 +303,21 @@ NAME                 READY     STATUS       RESTART
       <div class="post-list__meta"><time datetime="2018-01-31T06:50:56.000Z" class="post-list__meta--date date">2018-01-31</time> &#8226; <span class="post-list__meta--tags tags">于 
   <a class="tag-link" href="/tags/code/">code</a>, <a class="tag-link" href="/tags/openshift/">openshift</a>
 </span><a class="btn-border-small" href="/2018/01/31/2018-01-31_OpenShift/">继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+  
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/01/31/2018-02-01_想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗/" title="link to post.title">想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗？</a></h2>
+      <p class="excerpt">
+    
+      会的 不然我也不会游戏把性别改女.新赛季截图新赛季截图
+经常打农药水平还行,全能(中单&amp;gt;=辅助&amp;gt;射手&amp;gt;上单&amp;gt;打野),基本上每个赛季上单排王者20-30星.也发现一个问题越到后面的玩家其实越在意输赢.如果在低分段输了最多就在游戏里说说,后面都是加好友骂而且骂的很难听比如也导致我的好友列表都是加来骂我的人(有的时候心态蹦了真的就没打好)后来我都关闭了好友功能就以为没事了,可是我
+    &hellip;
+      </p>
+      <div class="post-list__meta"><time datetime="2018-01-31T06:50:56.000Z" class="post-list__meta--date date">2018-01-31</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/life/">life</a>, <a class="tag-link" href="/tags/游戏/">游戏</a>, <a class="tag-link" href="/tags/知乎/">知乎</a>
+</span><a class="btn-border-small" href="/2018/01/31/2018-02-01_想问一下男生们在打游戏碰到对面有女生撒娇卖萌的时候会放水吗/">继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
   
